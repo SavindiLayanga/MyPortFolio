@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+#login{
+    background-image:url("../home/assets/black-and-white-river-p6xlsq3s6s6c913l.jpg");
+    height: 700px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+body {
+    background-color: #212121;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+nav{
+    font-family: 'McLaren', cursive;
+    background-color: #2C3333;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    /*position: fixed;*/
+}
+
+nav ul {
+    display: inline-flex;
+    list-style: none;
+    float: top;
+}
+
+nav ul li {
+    width: 120px;
+    margin: 10px;
+    padding: 10px;
+}
+
+nav ul li a {
+    font-size: 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+    position: relative; /* Add position relative */
+    transition: 0.3s color; /* Transition the color property */
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0; /* Start with no underline */
+    height: 2px;
+    background-color: #DDF44C;
+    transition: width .3s; /* Transition the width property */
+}
+
+nav ul li a:hover {
+    color: #DDF44C; /* Change text color on hover */
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Expand the underline on hover */
+}
+
+#info{
+    width: 50%; /* Adjust the width as needed */
+    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #555555;
+    opacity: 50%;
+    /*border: 2px solid #FFFFFF;*/
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: absolute;
+}
+#info p{
+    color: #FFFFFF;
+    transition: transform 1.0s ease-in;
+}
+
+#info p:hover{
+    transform: scale(1.8);
+}
+hr{
+    width: 50%; /* Set the width of the hr element */
+    height: 2px; /* Set the height of the hr element */
+    margin: 10px auto;
+}
+
+#hello{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+}
+#name{
+    font-family: 'Cinzel', serif;
+    font-size:50px ;
+}
+#post{
+    font-family: 'Courgette', cursive;
+    font-size: 25px;
+}
+.btn-cv{
+    width: 150px;
+    height: 30px;
+    font-size: 12px;
+    background-color: #555555;
+    color: #FFFFFF;
+    font-family: 'McLaren', cursive;
+    border: 2px solid #DDF44C;
+}
+/************************************************************/
+.main{
+    width: 100%;
+    height: 2px;
+    color: #FDFFAE;
+}
+#home{
+    background-color: #212121;
+    position: relative;
+    height: 100vh;
+}
+#home .topic{
+    position: absolute;
+    color: #FDFFAE;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+/*#home #aboutme hr{*/
+/*    width: 100px;*/
+/*    rotation: deg;*/
+/*    color: #FDFFAE;*/
+/*}*/
+#my-img{
+    width: 250px;
+    height: 400px;
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 10%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#home #intro{
+    width: 500px;
+    color: #FFFFFF;
+    position: absolute;
+    font-family: 'Allerta Stencil', sans-serif;
+    margin-top: 17%;
+    margin-left: 60%;
+    border-top: 2px solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    padding: 20px;
+}
+#intro p:last-child{
+    text-indent: 50px;
+}
+
+/*****************************************************************/
+
+#education .topic{
+    position: absolute;
+    color: #FDFFAE;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+/*#education #skills{*/
+/*    margin-right: 2%;*/
+/*    position: absolute;*/
+/*    color: #FDFFAE;*/
+/*    margin-top: 2%;*/
+/*}*/
+
+#education .edu div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #2F2F2D;
+    position: absolute;
+    color: #FFFFFF;
+    transition: transform 0.3s;
+}
+#education .edu div:hover{
+    transform: scale(1.3);
+}
+#education .edu div:first-child{
+    width: 450px;
+    height: 100px;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+#education .edu div:nth-child(2){
+    width: 450px;
+    height: 100px;
+    margin-left: 20%;
+    margin-top: 20%;
+}
+#education .edu div:nth-child(3){
+    width: 450px;
+    height: 100px;
+    margin-left: 20%;
+    margin-top: 30%;
+}
+#education .edu div:nth-child(4){
+    width: 125px;
+    height: 400px;
+    margin-left: 60%;
+    margin-top: 15%;
+}
+#education .edu div:last-child{
+    width: 125px;
+    height: 400px;
+    margin-left: 75%;
+    margin-top: 8%;
+}
+#education .edu img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#education .edu p{
+    width: 300px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+#education .edu p b{
+    color: #FAE843;
+}
+#education .div:nth-child(4)
+/*.top{*/
+/*    color: #9FC72F;*/
+/*    font-size: 30px;*/
+/*}*/
+/***********************************************************/
+
+#pro{
+    /*position: absolute;*/
+    /*color: #FDFFAE;*/
+    /*margin-left: 2%;*/
+    /*margin-top: 2%;*/
+}
+
+
+
+
