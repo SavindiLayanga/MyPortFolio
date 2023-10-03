@@ -1,213 +1,168 @@
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+*{
     background-color: #212121;
-    background-size: cover;
-    background-position: center;
+}
+.gallery{
     position: relative;
+    padding: 40px;
 }
-#pro{
-    position: absolute;
-}
-.topic{
+.topic {
     position: absolute;
     color: #FDFFAE;
     background-color: transparent;
 }
-#pro .topic{
-    margin-left: 2%;
-    margin-top: 2%;
-}
-.proname{
-    width: 800px;
-    height: 30px;
-    background-color: #DADD61;
-    color: black;
-    /*position: absolute;*/
-    font-size: 20px;
-    padding-left: 20px;
-    padding-top: 5px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-    /*font-family: ----------------------;*/
-}
-#pro1{
-    margin-left: 20%;
-    margin-top: 10%;
-}
-#pro2{
-    margin-left: 60%;
-    margin-top: 10%;
-}
-#pro3{
-    margin-left: 20%;
-    margin-top: 10%;
-}
-#pro4{
-    margin-left: 60%;
-    margin-top: 10%;
-}
-.project_info{
-    width: 800px;
-    height: 250px;
-    background-color:#383834 ;
-    position: relative;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-}
-#pro_info1{
-    margin-left: 20%;
-    margin-top: 15px;
-}
-#pro_info2{
-    margin-left: 60%;
-    margin-top: 15px;
-}
-#pro_info3{
-    margin-left: 20%;
-    margin-top: 15px;
-}
-#pro_info4{
-    margin-left: 60%;
-    margin-top: 15px;
-}
-img{
-    width: 250px;
-    height: 150px;
-    position: relative;
-    margin-top: 30px;
-    margin-left: 30px;
-}
-p{
-    width: 400px;
-    font-size: 16px;
-    color: #FFFFFF;
-    position: relative;
-    background-color: transparent ;
-    margin-top: -120px;
-    margin-left: 350px;
-}
-a{
-    color: #5A625C;
-    background-color: transparent;
-    margin-left: 650px;
-    /*transition: transform 0.1s;*/
-}
-/*a:hover{*/
-/*    transform: scale(1.1);*/
-/*}*/
 
-/*********************************************************************/
-
-#assignment{
-    position: relative;
-}
-#assignment .topic{
-    margin-left: 2%;
-    margin-top: 100%;
-}
-#assignment #assign_list div{
-    width: 1200px;
-    height: 50px;
-    position: absolute;
-    background-color: #4A4A46;
-    color: #FFFFFF;
-    font-size: 20px;
-    font-family: 'Marmelad', sans-serif;
-    padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
-#assignment #assign_list div:first-child{
-    margin-top: 230vh;
-    margin-left: 10vw;
-    position: absolute;
-}
-#assignment #assign_list div:nth-child(2){
-    margin-top: 238vh;
-    margin-left: 10vw;
-    position: absolute;
-}
-#assignment #assign_list div:nth-child(3){
-    margin-top: 246vh;
-    margin-left: 10vw;
-    position: absolute;
-}
-#assignment #assign_list div:nth-child(4){
-    margin-top: 254vh;
-    margin-left: 10vw;
-    position: absolute;
-}
-#assignment #assign_list div:nth-child(5){
-    margin-top: 262vh;
-    margin-left: 10vw;
-    position: absolute;
-}
-#assignment #assign_list div:nth-child(6){
-    margin-top: 270vh;
-    margin-left: 10vw;
-    position: absolute;
-}
-#assignment #assign_list div:nth-child(7){
-    margin-top: 278vh;
-    margin-left: 10vw;
-    position: absolute;
-}
-#assignment #assign_list div:nth-child(8){
-    margin-top: 286vh;
-    margin-left: 10vw;
-    position: absolute;
-}
-#assignment #assign_list div:nth-child(9){
-    margin-top: 294vh;
-    margin-left: 10vw;
-    position: absolute;
-}
-#assignment #assign_list div:last-child{
-    margin-top: 302vh;
-    margin-left: 10vw;
-    position: absolute;
-}
-.see-more-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    position: absolute;
-    margin-top: 315vh;
-    margin-left: 85vw;
-}
-
-.see-more-button:hover {
-    background-color:#0056b3;
-}
-
-/*******************************************************/
-#gallery {
-    position: relative;
-}
-
-#gallery .topic {
+.gallery .topic {
     position: absolute;
     top: 10px; /* Adjust the top position as needed */
     left: 10px; /* Adjust the left position as needed */
     background-color: transparent;
 }
 
-#gallery .photoes {
-    width: 400px;
-    height: 300px;
-    position: absolute;
-    top: 50%; /* Adjust the top position as needed */
-    left: 50%; /* Adjust the left position as needed */
-    transform: translate(-50%, -50%);
-    background-color: #DDF44C;
+.gallery-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    margin: 0;
+    padding: 60px 10%;
 }
 
-#gallery .photoes div:first-child {
-    /* Add any additional styling for the first child div as needed */
+.column{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    width: 100%;
 }
+
+.column img{
+    border: 2px solid transparent;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.column img:hover{
+    transform: scale(1.1);
+}
+/****************************************/
+.hireme{
+    position: relative;
+    padding: 40px;
+    height: 100vh; /* Make sure the body takes up the full viewport height */
+    margin: 0;
+}
+.hireme .centered-div {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1100px; /* Set the width of your div */
+    height: 500px; /* Set the height of your div */
+    background: linear-gradient(180deg, rgba(74,74,69,1) 0%, rgba(79,78,47,1) 47%, rgba(33,33,33,1) 80%);
+    text-align: center;
+    padding: 20px;
+}
+.hireme .centered-div p.title{
+    background-color: transparent;
+    color: #EEE272;
+    font-size: 50px;
+    padding-top: 10px;
+}
+.hireme .centered-div h4 {
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: transparent;
+    margin-top: 100px;
+    font-family: 'Hanuman', serif;
+}
+.hireme .centered-div .icon{
+    /*color: #FFFFFF;*/
+    z-index: 1;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjust the gap as needed for spacing */
+}
+.hireme .centered-div .icon a {
+    text-decoration: none; /* Remove underlines from the links */
+    color: #000; /* Set the link color as desired */
+}
+
+form {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: transparent;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: #FFFFFF;
+}
+/* Style form fields and labels */
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 1s;
+    color: #FFFFFF;
+}
+input[type="text"]:hover, input[type="email"]:hover, textarea:hover{
+    border: 1px solid #DDF44C;
+}
+textarea {
+    height: 100px; /* Adjust the height as needed */
+}
+/* Style the submit button */
+input[type="submit"] {
+    background-color: grey;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 70px;
+    transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+    background-color: #CBCCBC;
+    color: blue;
+}
+form label {
+    display: inline-block;
+    width: 30%; /* Adjust the width as needed to control label alignment */
+    text-align: left;
+}
+/*form input[type="text"],*/
+/*form input[type="email"],*/
+/*form textarea {*/
+/*    display: inline-block;*/
+/*    width: 65%; !* Adjust the width as needed to control input alignment *!*/
+/*    vertical-align: top; !* Align inputs to the top of labels *!*/
+/*    margin-right: 1%; !* Add some space between input and label *!*/
+/*}*/
+.hireme .centered-div p.under-info{
+    color: #DDF44C;
+    margin-top: 20px;
+}
+/*footer {*/
+/*    background-color: gray;*/
+/*    color: #FFFFFF;*/
+/*    padding: 10px 0;*/
+/*    text-align: center;*/
+/*    position: fixed;*/
+/*}*/
 

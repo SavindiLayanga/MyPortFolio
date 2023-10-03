@@ -5,30 +5,91 @@
     <title>photo</title>
 
     <link rel="stylesheet" href="photo.css">
+    <link rel="stylesheet" href="../asset/fontawsome/css/all.min.css">
 </head>
 <body>
 
-<section id="gallery">
-    <div class="topic" id>
+<section class="gallery">
+    <div class="topic">
         <h2>G<br>A<br>L<br>L<br>E<br>R<br>Y</h2>
     </div>
+    <div class="gallery-container">
+        <div class="column">
+            <img src="../asset/gallery/WhatsApp%20Image%202023-10-03%20at%2012.49.13_1dea282d.jpg"/>
+            <img src="../asset/gallery/WhatsApp%20Image%202023-10-03%20at%2012.49.13_c4f34c7a.jpg"/>
+        </div>
+        <div class="column">
+            <img src="../asset/gallery/WhatsApp%20Image%202023-10-03%20at%2012.49.14_3796b192.jpg"/>
+            <img src="../asset/gallery/WhatsApp%20Image%202023-10-03%20at%2012.49.15_68f082f1.jpg"/>
+            <img src="../asset/gallery/WhatsApp%20Image%202023-10-03%20at%2012.49.16_398c1d73.jpg"/>
 
-    <div class="photoes">
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
+        </div>
+        <div class="column">
+            <img src="../asset/gallery/WhatsApp%20Image%202023-10-03%20at%2012.49.18_f6825bdd.jpg"/>
+            <img src="../asset/gallery/WhatsApp%20Image%202023-10-03%20at%2012.49.19_0ad9bf84.jpg"/>
+        </div>
     </div>
-
-
-
-    <!--    <div>5</div>-->
-    <!--    <div>6</div>-->
-    <!--    <div>7</div>-->
-    <!--    <div>8</div>-->
-    <!--    <div>9</div>-->
-    <!--    <div>10</div>-->
-    <!--    <div>11</div>-->
 </section>
+
+<section class="hireme">
+    <div class="topic">
+        <h2>C<br>O<br>N<br>T<br>A<br>C<br>T<br><br>M<br>E</h2>
+    </div>
+    <div class="centered-div">
+        <p class="title">Have You Any Questions ?</p>
+        <div class="icon">
+            <a href="tel:+94776183770">
+                <i class="fa-solid fa-phone-volume fa-beat fa-lg" style="color: #d7d7d7;"></i>
+                <br>+94 776183770
+            </a>
+
+            <a href="mailto:savindilayanga@gmail.com">
+                <i class="fa-solid fa-envelope fa-beat fa-lg" style="color: #d7d7d7;"></i>
+                <br>savindilayanga@gmail.com
+            </a>
+
+            <a href="https://www.google.com/maps?q=6.0444,80.5687" target="_blank">
+                <i class="fa-regular fa-location-dot fa-flip fa-lg" style="color: #d7d7d7;"></i>
+                <br>Matara, Sri Lanka
+            </a>
+
+
+            <a href="https://www.linkedin.com/in/savindi-layanga-269589264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <i class="fa-brands fa-linkedin fa-bounce fa-lg" style="color: #d7d7d7;"></i>
+                <br>Savindi Layanga
+            </a>
+        </div>
+        
+        <h4> If you could touch my creative mind ,,, <br>I’m always open to discussing new projects, creative ideas and designs to be part of your vision ...</h4>
+
+        <form action="/submit-form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name here..." required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email here..." required><br><br>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Enter your address here..." required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="If you want to inform me or know something from me, Write your message here..." required></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <p class="under-info">
+            I.K.A.Savindi Layanga <br>
+            savindilayanga@gmail.com <br>
+            +94 776183770 <br>
+            Pahalagedara,Akurugoda, Kamburupitiya, Matara, Sri Lanka
+        </p>
+    </div>
+</section>
+
+<!--<footer>-->
+<!--    &copy; 2023 Your Company Name. All rights reserved.-->
+<!--</footer>-->
 
 </body>
 </html>
