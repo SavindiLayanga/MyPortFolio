@@ -108,64 +108,88 @@ a{
     margin-top: 100%;
 }
 #assignment #assign_list div{
-    width: 1200px;
-    height: 50px;
+    width: 250px;
+    height: 350px;
+    margin: 10px;
     position: absolute;
-    background-color: #4A4A46;
+    background-color: transparent;
+    border: 5px solid #4A4A46;
     color: #FFFFFF;
     font-size: 20px;
     font-family: 'Marmelad', sans-serif;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: transform 0.1s;
+}
+#assignment #assign_list div:hover{
+    transform: scale(1.1);
+    border: 5px solid greenyellow;
+}
+#assignment #assign_list div h4{
+    color: #FFFFFF;
+}
+#assignment #assign_list div img{
+    width:200px;
+    height: 125px;
+    margin: 20px 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#assignment #assign_list div p {
+    width:200px;
+    height: 150px;
+    font-size: 14px;
+    color: #555555;
+    margin: 5px;
+    text-indent: 30px;
 }
 #assignment #assign_list div:first-child{
-    margin-top: 230vh;
+    margin-top: 220vh;
     margin-left: 10vw;
     position: absolute;
 }
 #assignment #assign_list div:nth-child(2){
-    margin-top: 238vh;
-    margin-left: 10vw;
+    margin-top: 230vh;
+    margin-left: 27vw;
     position: absolute;
 }
 #assignment #assign_list div:nth-child(3){
-    margin-top: 246vh;
-    margin-left: 10vw;
+    margin-top: 220vh;
+    margin-left: 44vw;
     position: absolute;
 }
 #assignment #assign_list div:nth-child(4){
-    margin-top: 254vh;
-    margin-left: 10vw;
+    margin-top: 230vh;
+    margin-left: 61vw;
     position: absolute;
 }
 #assignment #assign_list div:nth-child(5){
-    margin-top: 262vh;
-    margin-left: 10vw;
+    margin-top: 220vh;
+    margin-left: 78vw;
     position: absolute;
 }
 #assignment #assign_list div:nth-child(6){
-    margin-top: 270vh;
+    margin-top: 269vh;
     margin-left: 10vw;
     position: absolute;
 }
 #assignment #assign_list div:nth-child(7){
     margin-top: 278vh;
-    margin-left: 10vw;
+    margin-left: 27vw;
     position: absolute;
 }
 #assignment #assign_list div:nth-child(8){
-    margin-top: 286vh;
-    margin-left: 10vw;
+    margin-top: 269vh;
+    margin-left: 44vw;
     position: absolute;
 }
 #assignment #assign_list div:nth-child(9){
-    margin-top: 294vh;
-    margin-left: 10vw;
+    margin-top: 278vh;
+    margin-left: 61vw;
     position: absolute;
 }
 #assignment #assign_list div:last-child{
-    margin-top: 302vh;
-    margin-left: 10vw;
+    margin-top: 269vh;
+    margin-left: 78vw;
     position: absolute;
 }
 .see-more-button {
@@ -177,7 +201,7 @@ a{
     border-radius: 5px;
     font-weight: bold;
     position: absolute;
-    margin-top: 315vh;
+    margin-top: 325vh;
     margin-left: 85vw;
 }
 
