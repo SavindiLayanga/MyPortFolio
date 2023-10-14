@@ -45,10 +45,10 @@
     border-radius: 10px;
     transition: 1s;
 }
-
-.column img:hover{
-    transform: scale(1.1);
+.column img:hover {
+    transform: rotate3d(1, 1, 1, 360deg);
 }
+
 /****************************************/
 .hireme{
     position: relative;
