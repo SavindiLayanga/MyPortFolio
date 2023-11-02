@@ -8,13 +8,13 @@ html{
     outline: none;
     border: none;
     box-sizing: border-box;
-    /*font-family: Poppins, sans-serif;*/
     scroll-behavior: smooth;
 }
 
 body {
     background: #212121;
     color: white;
+    overflow-x: hidden;
 }
 
 .header{
@@ -53,6 +53,7 @@ body {
     margin: 0;
     padding: 10px;
     transition: transform 0.1s;
+    animation: slide-right-nav 1s ease forwards;
 }
 
 .nav_bar li:hover{
@@ -67,6 +68,17 @@ body {
 
 .nav_bar a:hover{
     color: #DDF44C;
+}
+@keyframes slide-right-nav {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
 }
 /*************************************************************/
 .home{
@@ -104,12 +116,12 @@ body {
     top: 10%;
     left: 22%;
     text-align: right;
+    animation: heading-anima 1s linear;
 }
 @keyframes heading-anima {
     0% {
-        left: 0;
+        left: 10%;
     }
-
     100% {
         left: 22%;
     }
@@ -134,6 +146,17 @@ body {
     text-align: left;
     font-size: 17px;
     font-family: 'Maven Pro', sans-serif;
+    animation: paragraphs 1s ease forwards;
+}
+@keyframes paragraphs {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 .status{
     position: absolute;
@@ -191,7 +214,7 @@ body {
     width: 75%;
     margin: 5px 0 0;
 }
-.social-media{
+.social-media {
     padding: 3% 0;
     position: absolute;
     left: 55%;
@@ -221,18 +244,7 @@ body {
     transform: translateY(-5px);
 }
 
-/*.up-arrow{*/
-/*    font-size: 40px;*/
-/*    position: fixed;*/
-/*    bottom: 20px;*/
-/*    right: 20px;*/
-/*    margin: auto;*/
-/*}*/
-
-/*#about{*/
-/*    background-color: #2F2F2D;*/
-/*}*/
-
+/**********************************************/
 h3{
     font-size: 40px;
     font-weight: 750;
@@ -534,7 +546,7 @@ h3{
 }
 .projects h3{
     margin-left: 5%;
-    margin-top: 4%;
+    margin-top: 5%;
 }
 .project-list{
     padding: 10%;
@@ -551,87 +563,62 @@ h3{
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     font-family: 'Inria Serif', serif;
 }
-#project-card-one {
+.project{
+    /*height: 100vh;*/
     position: relative;
-    display: inline-block;
-    background-color: #383834;
-    width: 66%;
-    height: 40%;
-    padding-top: 5px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-    cursor: pointer;
+    padding: 50px 10% 0;
 }
-.project-card:hover{
-    border: #fff65d solid;
-}
-#project-card-two {
-    position: relative;
-    /*display: inline-block;*/
-    background-color: #383834;
-    width: 66%;
-    height: 40%;
-    padding-top: 5px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-    cursor: pointer;
-}
-.project-card:hover{
-    border: #fff65d solid;
-}
-#project-card-one img{
-    display: block;
-    width: 300px;
-    height: 200px;
-    padding: 2%;
-    /*box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;*/
-}
-#project-card-two img{
-    display: block;
-    width: 300px;
-    height: 200px;
-    padding: 2%;
-    /*box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;*/
-}
-#project-one h2{
+.journey-topic{
     position: absolute;
-    top: 40px;
-    margin-left: 48%;
-    padding: 5px;
-    font-size: 16px;
-    font-weight: normal;
-    font-family: 'Maven Pro', sans-serif;
+    left: 80px;
+    font-weight: 600;
+    font-size: 32px;
 }
-#project-one{
-    flex-direction: column;
+.project-container-box{
+}
+.project-container{
+    /*height: 80%;*/
     display: flex;
-    margin-left: 10%;
-    padding-bottom: 5%;
-    gap: 10px;
-    transition: transform 1s;
-}
-#project-one:hover{
-    transform: scale(1.05);
-}
-#project-two{
     flex-direction: column;
-    display: flex;
-    margin-left: 20%;
-    padding-bottom: 5%;
-    gap: 10px;
-    transition: transform 1s;
+    gap: 40px;
+    padding: 80px 10%;
 }
-#project-two h2 {
-    position: absolute;
-    top: 40px;
-    margin-left: 48%;
-    padding: 5px;
+.project-container .project-name{
+    height: 40px/* calc(100%/4)*/;
+    width: 100%;
+    margin-bottom: -25px;
+    background-color: #fff65d;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1%;
+    font-weight: bold;
+}
+.project-container .project-info{
+    height:200px/* calc(100%/4)*/;
+    width: 100%;
+    /*border: 2px solid #fff65d;*/
+    padding: 2%;
+    box-shadow: black 0 0 20px;
+    transition: 2s;
+    /*border-radius: 25px;*/
+    background-color: #2F2F2D;
+}
+.project-container .project-info:hover{
+    transform: scale(0.97);
+}
+.project-container .project-info img{
+    width: 246px;
+    height: 166px;
+}
+.project-container .project-info p{
+    margin-top: -13%;
+    margin-left: 30%;
     font-size: 16px;
-    font-weight: normal;
-    font-family: 'Maven Pro', sans-serif;
+    color: ghostwhite;
 }
-
-.fa-circle-arrow-right{
-    margin-left: 50%;
-    top: 50%;
+.project-container .project-info fa{
+    top: 50px;
+    margin-left: 100%;
 }
 /*********************************************************/
 
@@ -639,51 +626,90 @@ h3{
     top: 385%;
     left: 5%;
 }
-.assignment-card {
-    width: 200px;
-    height: 300px;
-    perspective: 1000px; /* This gives depth to the 3D effect */
+
+.assignment-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 40px;
+}
+
+.assignment-card{
+    border: 2px solid #9A98A8;
     position: relative;
+    border-radius: 25px;
+    background: transparent;
+    padding: 40px;
+    gap: 30px;
     display: flex;
-}
-.assignment .assignment-container #card1{
-    margin-left: 10%;
-}
-.assignment .assignment-container #card2{
-    margin-top: 1%;
-    margin-left: 20%;
+    flex-direction: column;
+    transition: 0.5s;
+    text-align: center;
+
 }
 
-.assignment-card .font-side,
-.assignment-card .back-side {
-    width: 100%;
+.assignment-card:hover{
+    transform: translateY(-10px);
+    border: 2px solid #FF014F;
+}
+.assignment-card img{
+
+}
+.assignment-card h4{
+    color: #9A98A8;
+    font-size: 24px;
+}
+
+.service-card:hover i{
+    box-shadow: #FF014F 0 0 10px;
+}
+
+
+/*********************************************************************************/
+
+.gallery{
+    position: relative;
+    padding: 20px;
+}
+#gallery h3{
+    left: 5% ;
+    top: 64%;
+}
+/*#background-img{*/
+/*    width: 100%;*/
+/*    height: 25%;*/
+/*    z-index: -1;*/
+/*}*/
+
+.gallery-container{
+    margin-top: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     height: 100%;
-    position: absolute;
-    backface-visibility: hidden; /* Hides the back-side initially */
-}
-
-.assignment-card .font-side {
-    background-color: #555555;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    transition: transform 0.5s; /* Add a smooth transition effect */
+    padding: 60px 10%;
 }
 
-.assignment-card .back-side {
-    background-color: #555555;
+.column{
     display: flex;
+    flex-direction: column;
+    height: 100%;
     align-items: center;
-    justify-content: center;
-    transform: rotateY(180deg); /* Initially, the back is rotated */
-    transition: transform 0.5s;
+    width: 100%;
 }
 
-.assignment-card:hover .font-side {
-    transform: rotateY(180deg);
+.column img{
+    border: 2px solid transparent;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    transition: 1s;
 }
 
-.assignment-card:hover .back-side {
-    transform: rotateY(0deg);
+.column img:hover{
+    transform: scale(1.1);
 }
 
