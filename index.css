@@ -611,6 +611,7 @@ h3{
     height: 166px;
 }
 .project-container .project-info p{
+    text-indent: 50px;
     margin-top: -13%;
     margin-left: 30%;
     font-size: 16px;
@@ -623,8 +624,8 @@ h3{
 /*********************************************************/
 
 #assignment h3{
-    top: 385%;
-    left: 5%;
+    top: 60%;
+    left: 0%;
 }
 
 .assignment-container{
@@ -632,6 +633,7 @@ h3{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
     padding: 40px;
+    justify-content: space-around;
 }
 
 .assignment-card{
@@ -640,24 +642,27 @@ h3{
     border-radius: 25px;
     background: transparent;
     padding: 40px;
-    gap: 30px;
+    gap: 20px;
     display: flex;
+    margin-top: 15%;
+    margin-left: 40%;
     flex-direction: column;
     transition: 0.5s;
     text-align: center;
-
+    width: 260px;
+    height: 200px;
 }
 
 .assignment-card:hover{
     transform: translateY(-10px);
-    border: 2px solid #FF014F;
+    border: 2px solid #fff65d;
 }
 .assignment-card img{
 
 }
 .assignment-card h4{
     color: #9A98A8;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .service-card:hover i{
