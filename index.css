@@ -624,7 +624,7 @@ h3{
 /*********************************************************/
 
 #assignment h3{
-    top: 60%;
+    top: 40%;
     left: 0%;
 }
 
@@ -677,8 +677,8 @@ h3{
     padding: 20px;
 }
 #gallery h3{
-    left: 5% ;
-    top: 64%;
+    left: 0 ;
+    top: 12%;
 }
 /*#background-img{*/
 /*    width: 100%;*/
@@ -687,7 +687,7 @@ h3{
 /*}*/
 
 .gallery-container{
-    margin-top: 50%;
+    margin-top: 15%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -706,15 +706,54 @@ h3{
 
 .column img{
     border: 2px solid transparent;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 50%;
-    border-radius: 10px;
+    margin: 3px;
+    /*padding: 4px;*/
+    width: 74%;
+    height: 39%;
+    border-radius: 20px;
     transition: 1s;
 }
-
+.column #img1 {
+    width: 55%;
+    margin-left: 58%;
+}
+.column #img2 {
+    width: 100%;
+    margin-left: 8%;
+}
+.column #img3 {
+    /*width: 55%;*/
+    margin-left: 46%;
+}
+.column #img4 {
+    width: 75%;
+    margin-left: 0%;
+}
+.column #img5 {
+    width: 70%;
+}
+.column #img6 {
+    width: 55%;
+    margin-left: -21%;
+}
+.column #img7 {
+    width: 80%;
+    margin-left: 18%;
+}
+.column #img8 {
+    width: 96%;
+    margin-left: -18%;
+}
+.column #img9 {
+    width: 76%;
+    margin-left: -80%;
+}
+.column #img10 {
+    width: 92%;
+    margin-left: 0%;
+}
 .column img:hover{
     transform: scale(1.1);
+    border: 3px solid #fff65d;
 }
 
