@@ -17,19 +17,35 @@ body {
     overflow-x: hidden;
 }
 
-.header{
+/*.header{*/
+/*    position: fixed;*/
+/*    width: 100%;*/
+/*    right: 0;*/
+/*    left: 0;*/
+/*    display: flex;*/
+/*    padding: 30px 10%;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    z-index: 100;*/
+/*    background: #2C3333;*/
+/*    height: 50px;*/
+/*    !*opacity: 0.9;*!*/
+/*}*/
+.header {
     position: fixed;
     width: 100%;
-    right: 0;
-    left: 0;
     display: flex;
-    padding: 30px 10%;
-    justify-content: space-between;
-    align-items: center;
+    padding: 10px 10%;
     z-index: 100;
     background: #2C3333;
-    height: 50px;
-    /*opacity: 0.9;*/
+    align-items: center;
+    justify-content: center;
+    /* opacity: 0.9; */
+}
+
+.nav_bar{
+    top: 0;
+    display: flex;
 }
 
 .nav_bar{
@@ -1310,11 +1326,26 @@ footer span{
 }
 
 @media (max-width: 768px){
+    /*.header {*/
+    /*    position: fixed;*/
+    /*    width: 100%;*/
+    /*    right: 9px;*/
+    /*    left: 213px;*/
+    /*}*/
     .header {
         position: fixed;
         width: 100%;
-        right: 9px;
-        left: 213px;
+        display: flex;
+        padding: 10px 10%;
+        z-index: 100;
+        background: #2C3333;
+        align-items: center;
+        justify-content: center;
+        /* opacity: 0.9; */
+    }
+    .nav_bar{
+        top: 0;
+        display: flex;
     }
     .nav_bar ul{
         margin: -4px -270px;
