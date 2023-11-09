@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="asset/normalize.css">
     <link rel="stylesheet" href="asset/fontawsome/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
@@ -82,8 +83,8 @@
         <section class="details">
             <article class="article">
                 <div class="image-container">
-                    <div class="about-image">
-<!--                        <img src="asset/images/gallery/WhatsApp%20Image%202023-10-03%20at%2012.49.19_0ad9bf84.jpg"/>-->
+                    <div class="img-box">
+<!--                        <img src="asset/images/gallery/WhatsApp%20Image%202023-07-12%20at%2022.50.51.11.jpg"/>-->
                     </div>
                     <div class="rotate-text">
                         <div class="text">
@@ -103,11 +104,11 @@
                          I’m 21 years old young and highly active enthusiast. I’m a UI/UX designer living in Matara, Sri Lanka. I’m currently studying in Institute Software Engineering (IJSE) in branch Panadura. My interests are in Front End Engineering. I have a good knowledge of Java. I most like to designing parts in software more than back end parts.
                     </p>
 
-                    <button>Download CV
-                        <a href="asset/CV/Savindi_Layanga_CV.pdf" target="_blank">
+                    <a href="asset/CV/Savindi_Layanga_CV.pdf" target="_blank">
+                        <button>Download CV
                             <i class="fa-solid fa-download" style="color: white"></i>
-                        </a>
-                    </button>
+                        </button>
+                    </a>
                 </section>
             </article>
         </section>
@@ -246,59 +247,60 @@
             <h3 >A<br>S<br>S<br>I<br>G<br>N<br>M<br>E<br>N<br>T</h3>
         </div>
 
-        <div class="assignment-container-box">
-            <div class="assignment-container">
-
-                <div class="assignment-card">
-                    <img src="asset/images/assignment-img/Screenshot%20(670).png" alt="assignment -1">
-                    <h4>Assignment 1</h4>
-                </div>
-
-                <div class="assignment-card">
-                    <img src="asset/images/assignment-img/Screenshot%20(671).png" alt="assignment -2">
-                    <h4>Assignment 2</h4>
-                </div>
-
-                <div class="assignment-card">
-                    <img src="asset/images/assignment-img/Screenshot%20(672).png" alt="assignment -3">
-                    <h4>Assignment 3</h4>
-                </div>
-
-                <div class="assignment-card">
-                    <img src="asset/images/assignment-img/Screenshot%20(673).png" alt="assignment -4">
-                    <h4>Assignment 4</h4>
-                </div>
-
-                <div class="assignment-card">
-                    <img src="asset/images/assignment-img/Screenshot%20(674).png" alt="assignment -5">
-                    <h4>Assignment 5</h4>
-                </div>
-
-                <div class="assignment-card">
-                    <img src="asset/images/assignment-img/Screenshot%20(675).png" alt="assignment -6">
-                    <h4>Assignment 6</h4>
-                </div>
-
-                <div class="assignment-card">
-                    <img src="asset/images/assignment-img/Screenshot%20(676).png" alt="assignment -7">
-                    <h4>Assignment 7</h4>
-                </div>
-
-                <div class="assignment-card">
-                    <img src="asset/images/assignment-img/Screenshot%20(677).png" alt="assignment -8">
-                    <h4>Assignment 8</h4>
-                </div>
-
-                <div class="assignment-card">
-                    <img src="asset/images/assignment-img/Screenshot%20(680).png" alt="assignment -9">
-                    <h4>Assignment 9</h4>
-                </div>
-
-                <div class="assignment-card">
-                    <img src="asset/images/assignment-img/Screenshot%20(682).png" alt="assignment -10">
-                    <h4>Assignment 10</h4>
+        <div class="assignment-container">
+            <div class="drop" style="--clr:#212121;">
+                <div class="assign-content" onclick="openNewPage()">
+                    <h1 class="assign-number"> Using CSS Position </h1>
+                    <p class="assign-para">
+                        <ul>
+                            <li> Case - 01</li>
+                            <li> Case - 02</li>
+                            <li> Case - 03</li>
+                            <li> Case - 04</li>
+                            <li> Case - 05</li>
+                            <li> Case - 06</li>
+                        </ul>
+                    </p>
                 </div>
             </div>
+
+            <div class="drop" style="--clr:#212121;">
+                <div class="assign-content" onclick="openNewPage()">
+                    <h1 class="assign-number"> Transitions and KeyFrames </h1>
+                    <p class="assign-para">
+                        <ul>
+                            <li>Navigation Transition</li>
+                            <li>Circle Border Transition</li>
+                            <li>Rotation Animation</li>
+                            <li>Water Drop Animation</li>
+                            <li>Slider Animation</li>
+                            <li>Car Animation</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="drop" style="--clr:#212121;">
+                <div class="assign-content" onclick="openNewPage()">
+                    <h1 class="assign-number"> POS System</h1>
+                    <p class="assign-para"></p>
+                </div>
+            </div>
+
+            <div class="drop" style="--clr:#212121;">
+                <div class="assign-content" onclick="openNewPage()">
+                    <h1 class="assign-number">  DOM Manipulation With JavaScript </h1>
+                    <p class="assign-para">
+                    <ul>
+                        <li> Case 01 - Que Process</li>
+                        <li> Case 02 - JQueue</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <a href="assignment.html">More
+                <!--<i class="fa-solid fa-circle-arrow-right" style="color: white;"></i>-->
+            </a>
         </div>
     </section>
 
@@ -329,7 +331,114 @@
         </div>
     </section>
     </section>
+
+    <section class="contact" id="contact">
+        <div class="content">
+            <h2> Contact Me </h2>
+            <p> If you could touch my creative mind ,,, <br>
+                I’m always open to discussing new projects, creative ideas and designs to be part of your vision ...
+            </p>
+        </div>
+        <div class="container">
+            <div class="contact-Info">
+
+                <div class="InputBox">
+                    <div class="icon">
+                        <i class="fa-regular fa-location-dot fa-beat-fade" style="color: #eeec72;"></i>
+                    </div>
+                    <div class="text">
+                        <h6 class="contact-head">Address</h6>
+                        <p class="paaaa"> Pahalagedara, <br> Akurugoda, <br> Kamburupitiya, <br>
+                            Matara</p>
+                    </div>
+                </div>
+                <br>
+
+                <div class="InputBox">
+                    <div class="icon">
+                        <i class='bx bxs-phone-call' style="color: black; width: 500px"></i>
+                    </div>
+                    <div class="text">
+                        <h6 class="contact-head"> Phone </h6>
+                        <p class="paaaa"> +94 776183770</p>
+                    </div>
+                </div>
+                <br>
+
+                <div class="InputBox">
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope fa-beat-fade" style="color: #eeec72;"></i>
+                    </div>
+                    <div class="text">
+                        <h6 class="contact-head">E-mail</h6>
+                        <p class="paaaa"> savindilayanga@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="contact-form">
+                <form action="">
+                    <h2>Have you any Questions ? </h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span> Full Name</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span> E-mail </span>
+                    </div>
+
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span> Type your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+<!--        <div>-->
+<!--            <h3 >C<br>O<br>N<br>T<br>A<br>C<br>T<br><br>M<br>E</h3>-->
+<!--        </div>-->
+<!--        <div class="shadow-topic">-->
+<!--            <h1>Contact Me</h1>-->
+<!--        </div>-->
+        </section>
+    <footer data-scene>Copyright © 2023 <span>Savindi Layanga</span> | All Rights Reserved</footer>
+    </section>
 </main>
-<link rel="stylesheet" href="index.js">
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script>
+    function openNewPage() {
+        // Replace 'new-page.html' with the URL of the page you want to open
+        window.open('new-page.html', '_blank');
+    }
+</script>
+
+<!--<script>-->
+<!--    function sendEmail(){-->
+<!--        Email.send({-->
+<!--            Host : "smtp.gmail.com",-->
+<!--            Username : "savindi@gmail.com",-->
+<!--            Password : "savi#123",-->
+<!--            To : "savindilayanga@gmail.com",-->
+<!--            From : document.getElementById("email").value,-->
+<!--            Subject : "New Contact Form Enquiry ",-->
+<!--            Body : "Name: "+document.getElementById("name").value-->
+<!--                + "<br> Email: " + document.getElementById("email").value()-->
+<!--                + "<br> Phone no: " + document.getElementById("phone-num").value()-->
+<!--                + "<br> Message: " + document.getElementById("message").value()-->
+<!--        }).then(-->
+<!--            message => alert("message sent successfully")-->
+<!--        );-->
+<!--    }-->
+<!--</script>-->
+
+
 </body>
 </html>
