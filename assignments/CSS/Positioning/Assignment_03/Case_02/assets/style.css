@@ -1,0 +1,98 @@
+header {
+    width: 100%;
+    height: 9vh;
+    position: relative;
+    border-bottom: 2px solid black;
+}
+header>img {
+    max-width: 12%;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto 2px;
+}
+header>nav {
+    max-height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+header>nav>ol {
+    display: inline;
+}
+header>nav>ol>li {
+    display: inline;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+main {
+    position: relative;
+}
+
+main>div {
+    width: 18vw;
+    height: 100%;
+    background-color: #35155D;
+    position: absolute;
+    color: white;
+}
+
+main>div>h2 {
+    padding: 20px 0 0 40px;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: Arial;
+}
+
+.images {
+    height: 450px;
+    position: relative;
+}
+.images>div {
+    background-image: url("../assets/cute-kitty.gif");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid darkgray;
+    display: inline-block;
+    width: calc(100% / 3);
+    height: 45vh;
+    aspect-ratio: 1/1;
+    margin-top: 5px;
+    margin-right: -0.5%;
+    padding: 0;
+}
+
+main>section {
+    width: 80%;
+    position: relative;
+    left: 20%;
+}
+
+main>section>p {
+    padding: 0px;
+    font-size: 16px;
+    text-align: justify;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    margin-top: 0;
+    /*text-indent: 50px;*/
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: dimgray;
+    height: 3vw;
+}
+
+footer>h3 {
+    font-size: 25px;
+    font-family: Arial;
+    color: white;
+    margin: auto;
+}
