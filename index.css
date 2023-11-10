@@ -272,14 +272,14 @@ h3{
     border-color: #fff65d;
     animation: topic-anime 5s ease-in;
 }
-@keyframes topic-anime {
-    0% {
-        top: 100%;
-    }
-    100% {
-        bottom: 150%;
-    }
-}
+/*@keyframes topic-anime {*/
+/*    0% {*/
+/*        top: 100%;*/
+/*    }*/
+/*    100% {*/
+/*        bottom: 150%;*/
+/*    }*/
+/*}*/
 /******************/
 #about h3{
     left: 5%;
@@ -615,7 +615,7 @@ h3{
     /*height: 80%;*/
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 18px;
     padding: 80px 10%;
 }
 .project-container .project-name{
@@ -637,6 +637,7 @@ h3{
     transition: 2s;
     /*border-radius: 25px;*/
     background-color: #2F2F2D;
+    text-decoration: none;
 }
 .project-container .project-info:hover{
     transform: scale(0.97);
@@ -1046,20 +1047,20 @@ h3{
     margin-left: 72%;
 }
 
-@media (max-width:991px) {
-    .contact{
-        padding: 50px;
-    }
-    .container{
-        flex-direction: column;
-    }
-    .container .contact-Info{
-        margin-bottom: 40px;
-    }
-    .container .contact-Info{
-        width: 100%;
-    }
-}
+/*@media (max-width:991px) {*/
+/*    .contact{*/
+/*        padding: 50px;*/
+/*    }*/
+/*    .container{*/
+/*        flex-direction: column;*/
+/*    }*/
+/*    .container .contact-Info{*/
+/*        margin-bottom: 40px;*/
+/*    }*/
+/*    .container .contact-Info{*/
+/*        width: 100%;*/
+/*    }*/
+/*}*/
 footer{
     text-align: center;
     font-weight: bold;
