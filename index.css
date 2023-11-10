@@ -33,7 +33,7 @@ body {
 /*}*/
 .header {
     position: fixed;
-    width: 100%;
+    /*width: 100%;*/
     height: 60px;
     display: flex;
     padding: 10px 10%;
@@ -1517,5 +1517,258 @@ footer span{
         margin-left: 80%;
         margin-top: -3%;
     }
-
 }
+/****************************************************/
+@media (max-width: 768px) {
+    .home {
+        height: 65vh;
+    }
+
+    .home #my-img {
+        margin-top: -14%;
+        margin-left: 16%;
+        width: 54%;
+    }
+
+    .headings h1 span {
+        font-size: 16px;
+        margin-left: -100%;
+    }
+
+    .status .text.first-text {
+        color: white;
+        font-size: 19px;
+    }
+
+    .home-container p {
+        left: 39%;
+        top: 51%;
+        font-size: 7px;
+    }
+
+    .social-media a {
+        width: 15px;
+        height: 18px;
+        margin: -30px 10px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    #about h3 {
+        top: 62%;
+        left: 4%;
+    }
+
+    .about-description p {
+        font-size: 9px;
+        width: 151px;
+    }
+
+    .image-container {
+        margin-top: -40%;
+    }
+
+    .img-box::after {
+        inset: 3px;
+    }
+
+    .image-container .img-box {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-description h2 {
+        font-size: 11px;
+        margin-top: 0%;
+    }
+
+    .about-description button {
+        top: -13px;
+        left: 81px;
+        width: 66px;
+        height: 13px;
+        font-size: 6px;
+    }
+
+    /*******************************************/
+    .education #topic1 h3, .education #topic2 h3 {
+        top: 108%;
+    }
+
+    .education-container div {
+        width: 159px;
+        height: 45px;
+    }
+
+    img {
+        width: 18px;
+        margin-top: 5%;
+    }
+
+    .education-container div p {
+        font-size: 7px;
+        margin-left: 17%;
+        margin-top: -15%;
+    }
+
+    .education-container {
+        padding: 0px 10%;
+    }
+
+    .education-container {
+        gap: 9px;
+    }
+
+    .skills-container #first {
+        margin-top: -32%;
+    }
+
+    .skills-container #first .lang {
+        font-size: 8px;
+    }
+
+    .skills-container div {
+        width: 60px;
+        height: 243px;
+    }
+
+    .skills-container #first #java {
+        width: 59px;
+        height: 28px;
+        margin-left: -8px;
+        margin-top: -1px;
+    }
+
+    .skills-container #first #html {
+        width: 35px;
+        height: 23px;
+    }
+
+    .skills-container #first #js {
+        width: 67px;
+        height: 31px;
+        margin-left: -10px;
+        margin-top: 5px;
+    }
+
+    .skills-container #first #sql {
+        width: 34px;
+        height: 23px;
+        margin-left: 9px
+    }
+
+    .skills-container #first #css {
+        width: 27px;
+        height: 29px;
+        margin-left: 12px;
+        margin-top: 7px;
+    }
+
+    .skills-container #first-h3 {
+        font-size: 11px;
+        top: 117%;
+        left: 59%;
+    }
+
+    .skills-container #last-h3 {
+        font-size: 11px;
+        top: 171%;
+        left: 76%;
+    }
+
+    .skills-container #second #figma {
+        width: 35px;
+        height: 34px;
+        margin-left: 7px;
+        margin-top: 4px;
+    }
+
+    .skills-container #second .skills {
+        font-size: 9px;
+        margin-left: 7px;
+    }
+
+    .skills-container #second #ps {
+        width: 34px;
+        height: 33px;
+        margin-left: 9px;
+    }
+
+    .skills-container #second #canva {
+        width: 32px;
+        height: 29px;
+        margin-left: 9px;
+    }
+
+    .skills-container #second {
+        margin-left: 81%;
+        margin-top: -68%;
+    }
+
+    /*************************************************/
+    .project-container .project-name {
+        width: 115%;
+        font-size: 11px;
+        height: 20px /* calc(100%/4)*/;
+    }
+
+    .project-container .project-info img {
+        width: 100px;
+        height: 70px;
+        margin-top: 2%;
+    }
+
+    .project-container .project-info {
+        padding: 3%;
+        width: 116%;
+        height: 100px;
+    }
+
+    .project-container .project-info p {
+        text-indent: 26px;
+        margin-top: -25%;
+        margin-left: 39%;
+        font-size: 9px;
+    }
+
+    /********************************************/
+    #assignment h3 {
+        top: 34%;
+    }
+
+    .assignment-container .drop {
+        width: 194px;
+        height: 146px;
+    }
+
+    /**************************************/
+    .contact .container {
+        margin-left: 60%;
+    }
+
+    .contact .container .contact-Info .text .contact-head {
+        font-size: 16px;
+    }
+
+    .contact .container .contact-Info .text .paaaa {
+        font-size: 12px;
+    }
+
+    .contact-form {
+        margin-left: -59%;
+        margin-top: -11%;
+        width: 96%;
+        height: 262px;
+    }
+
+    .contact-form h2 {
+        font-size: 21px;
+        margin-top: -9%;
+    }
+    footer {
+        font-size: 12px;
+    }
+}
+
