@@ -1473,12 +1473,49 @@ footer span{
     }
     /************************************************/
     #assignment h3 {
-        top: 36%;
+        top: 39%;
     }
     .assignment-container .drop {
         width: 205px;
         height: 183px;
         margin-top: 5%;
+    }
+    .assignment-container {
+        margin-top: -8%;
+        padding: 64px 0px;
+    }
+    .container .contact-Info {
+        width: 100%;
+        margin-top: 10%;
+    }
+    .contact .content h2 {
+        font-size: 36px;
+    }
+    .contact .container .contact-Info .text .contact-head {
+        font-size: 20px;
+    }
+    .contact .container .contact-Info .text .paaaa {
+        font-size: 14px;
+    }
+    .contact-form {
+        margin-left: 22%;
+        margin-top: -49%;
+        width: 53%;
+        height: 262px;
+    }
+    .contact-form h2 {
+        font-size: 24px;
+        margin-top: -6%;
+    }
+    .contact-form .inputBox input, .contact-form .inputBox textarea {
+        width: 99%;
+    }
+    .contact-form .inputBox input[type="submit"] {
+        width: 61px;
+        padding: 2px;
+        font-size: 17px;
+        margin-left: 80%;
+        margin-top: -3%;
     }
 
 }
