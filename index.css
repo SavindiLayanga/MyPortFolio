@@ -1771,4 +1771,28 @@ footer span{
         font-size: 12px;
     }
 }
+@media (max-width: 375px) {
+    .home #my-img {
+        margin-top: -14%;
+        margin-left: 20%;
+        width: 54%;
+        display: none;
+    }
+    .headings h1 {
+        font-size: 12px;
+        margin-left: 18%;
+    }
+    .status-container {
+        overflow: hidden;
+        margin-top: 8%;
+    }
+    .status .text.first-text {
+        color: white;
+        font-size: 15px;
+    }
+
+
+
+}
+
 
