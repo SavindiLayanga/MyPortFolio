@@ -218,13 +218,13 @@ body {
         left: 0%;
     }
 }
-/*.status h3 span{
+.status h3 span{
     color: #8C6FFF;
     font-family: Quicksand, sans-serif;
     white-space: nowrap;
     font-size: 40px;
     margin: 0;
-}*/
+}
 .line {
     border: 3px solid #FBCB0A;
     border-radius: 10px;
@@ -243,7 +243,6 @@ body {
     /* align-items: center; */
     justify-content: center;
 }
-
 .social-media a{
     display: inline-flex;
     justify-content: center;
@@ -257,7 +256,6 @@ body {
     font-size: 20px;
     transition: 1s;
 }
-
 .social-media a:hover{
     box-shadow: 0 0 20px #fff65d;
     transform: translateY(-5px);
@@ -282,7 +280,7 @@ h3{
         bottom: 150%;
     }
 }
-
+/******************/
 #about h3{
     left: 5%;
     top: 100%;
@@ -297,25 +295,27 @@ h3{
     padding: 10px;
 }
 
-.article{
-    width: 100%;
+.article {
+    /* width: 100%; */
     display: flex;
     gap: 40px;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-left: 25px;
-    margin-right: 25px;
-    transition: all 2s;
+    justify-content: space-between;
+    padding: 0px 0px 0 80px;
+    /* gap: 10px; */
+    /* flex-wrap: wrap; */
+    /* margin-left: 25px; */
+    /* margin-right: 25px; */
+    /* transition: all 2s; */
 }
 .image-container{
     position: relative;
 }
-.image-container .img-box{
-    margin-left: 100%;
+.image-container .img-box {
+    /* margin-left: 100%; */
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     background: repeating-conic-gradient(from var(--a), #fff65d 0%, #fff65d 5%, transparent 5%, transparent 40%, #fff65d 50%);
     animation: animate 4s linear infinite;
     border-radius: 20px;
@@ -358,12 +358,12 @@ h3{
     z-index: 1;
 }
 .about-description {
-    width: 500px;
+    /* width: 500px; */
     display: flex;
     flex-direction: column;
     padding: 20px;
-    position: absolute; /* Set the position property to absolute or relative, as needed */
-    left: 18%; /* Set the left position to 20% */
+    /* position: absolute; */
+    left: 18%;
 }
 
 .about-description h2{
@@ -372,18 +372,13 @@ h3{
     /* line-height: 52px; */
     margin-top: 0;
     margin-bottom: 8px;
-    text-align: center;
-    margin-left: -21%;
 }
 .about-details-heading{
     position: relative;
     color: white;
-    width: 800px;
     overflow: hidden;
 }
-.about-description p{
-    text-indent: 50px;
-}
+
 .about-details-heading span:before{
     content: "";
     position: absolute;
@@ -403,9 +398,10 @@ h3{
         left: 0%;
     }
 }
-.about-description p{
+.about-description p {
     font-size: 16px;
-    width: 600px;
+    text-indent: 50px;
+    /* width: 600px; */
     font-family: poppins, sans-serif;
     color: #9A98A8;
     margin-top: 2px;
@@ -1352,4 +1348,56 @@ footer span{
         margin: -4px -270px;
         font-size: 10px;
     }
+    .home {
+        height: 69vh;
+    }
+    .home #my-img {
+        margin-top: -6%;
+        margin-left: 2%;
+        width: 46%;
+    }
+    .headings {
+        top: 7%;
+    }
+    .headings h1 {
+        font-size: 15px;
+        margin-left: 21%;
+    }
+    .headings h1 span {
+        font-size: 25px;
+        margin-left: 13%;
+    }
+    .status {
+        left: 43%;
+    }
+    .status-container {
+        /* width: 500px; */
+        overflow: hidden;
+        margin-top: 4%;
+        font-size: 12px;
+    }
+    .status .status-container span{
+        font-size: 12px;
+    }
+    .home-container p {
+        left: 42%;
+        top: 46%;
+        font-size: 12px;
+    }
+    .social-media {
+        top: 62%;
+        left: 48%;
+    }
+    .social-media a {
+        width: 30px;
+        height: 30px;
+        margin: -30px 10px;
+    }
+    h3{
+        font-size: 26px;
+    }
+    #about h3{
+        top: 64%;
+    }
+
 }
