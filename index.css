@@ -1517,5 +1517,12 @@ footer span{
         margin-left: 80%;
         margin-top: -3%;
     }
-
+}
+/****************************************************/
+@media (max-width: 768px) {
+    .home #my-img {
+        margin-top: -14%;
+        margin-left: 16%;
+        width: 54%;
+    }
 }
