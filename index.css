@@ -159,7 +159,7 @@ body {
     position: absolute;
     left: 50%;
     top: 58%;
-    width: 1049px;
+    /*width: 1049px;*/
     padding: 10px;
     text-align: left;
     font-size: 17px;
@@ -283,7 +283,7 @@ h3{
 /******************/
 #about h3{
     left: 5%;
-    top: 100%;
+    top: 117%;
 }
 
 .details{
@@ -301,7 +301,7 @@ h3{
     gap: 40px;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 0px 0 80px;
+    padding: 37px 5% 0 10%;
     /* gap: 10px; */
     /* flex-wrap: wrap; */
     /* margin-left: 25px; */
@@ -361,17 +361,17 @@ h3{
     /* width: 500px; */
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 143px 10px 10px 10px;
     /* position: absolute; */
     left: 18%;
 }
 
-.about-description h2{
+.about-description h2 {
     font-weight: 600;
     font-size: 40px;
-    /* line-height: 52px; */
     margin-top: 0;
     margin-bottom: 8px;
+    margin-left: 0%;
 }
 .about-details-heading{
     position: relative;
@@ -386,7 +386,7 @@ h3{
     left: 10%;
     height: 100%;
     width: 70%;
-    background-color:red;
+    background-color:#212121;
     border-left: 4px solid white;
     animation: about-detail-anima 4s steps(12) infinite;
 }
@@ -401,7 +401,7 @@ h3{
 .about-description p {
     font-size: 16px;
     text-indent: 50px;
-    /* width: 600px; */
+     /*width: 655px;*/
     font-family: poppins, sans-serif;
     color: #9A98A8;
     margin-top: 2px;
@@ -438,11 +438,11 @@ h3{
 /*********************************************************/
 .education #topic1 h3{
     left: 5%;
-    top: 180%;
+    top: 205%;
 }
 .education #topic2 h3{
     left: 93%;
-    top: 180%;
+    top: 205%;
 }
 .education-container-box{
 }
@@ -506,14 +506,14 @@ h3{
 .skills-container #first-h3{
     color: #9FC72F;
     font-size: 20px;
-    top: 195%;
+    top: 227%;
     left: 59%;
     @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Autour+One&family=Comfortaa:wght@300&family=Hanuman:wght@100&family=Inika&family=Maven+Pro&family=Tilt+Neon&display=swap');
 }
 .skills-container #last-h3{
     color: #9FC72F;
     font-size: 20px;
-    top: 246%;
+    top: 289%;
     left: 73%;
 }
 .skills-container #first #java{
@@ -1114,12 +1114,12 @@ footer span{
     }
     .about-description h2 {
         font-size: 30px;
-        margin-left: -55%;
+        /*margin-left: -55%;*/
         margin-top: 15%;
     }
     .about-details-heading span:before {
         left: -2%;
-        width: 41%;
+        width: 100%;
     }
     .about-description p {
         font-size: 13px;
@@ -1133,13 +1133,16 @@ footer span{
         font-size: 13px;
     }
     .image-container .img-box {
-        width: 300px;
-        height: 300px;
+        width: 225px;
+        height: 225px;
     }
     /********************************/
     .education #topic1 h3,
     .education #topic2 h3{
-        top: 174%;
+        top: 203%;
+    }
+    .education-container {
+        padding: 127px 10%;
     }
     .education-container div {
         height: 77px;
@@ -1156,7 +1159,7 @@ footer span{
     }
     .skills-container #first-h3 {
         font-size: 16px;
-        top: 181%;
+        top: 202%;
     }
     .skills-container #first {
         margin-top: -56%;
@@ -1216,7 +1219,7 @@ footer span{
     }
     .skills-container #last-h3 {
         font-size: 16px;
-        top: 246%;
+        top: 272%;
         left: 74%;
     }
     .skills-container {
@@ -1276,6 +1279,9 @@ footer span{
     #gallery h3 {
         top: 5%;
     }
+    .gallery-container {
+        margin-top: 2%;
+    }
     /*****************************/
     .contact .content h2 {
         font-size: 40px;
@@ -1321,7 +1327,7 @@ footer span{
         align-items: center;
     }
 }
-
+/*********************************************************************/
 @media (max-width: 768px){
     /*.header {*/
     /*    position: fixed;*/
@@ -1352,7 +1358,7 @@ footer span{
         height: 69vh;
     }
     .home #my-img {
-        margin-top: -6%;
+        margin-top: 0%;
         margin-left: 2%;
         width: 46%;
     }
@@ -1371,33 +1377,108 @@ footer span{
         left: 43%;
     }
     .status-container {
-        /* width: 500px; */
         overflow: hidden;
-        margin-top: 4%;
+        margin-top: 9%;
         font-size: 12px;
     }
     .status .status-container span{
-        font-size: 12px;
+        font-size: 16px;
+    }
+    .line {
+        border: 2px solid #FBCB0A;
+        width: 56%;
     }
     .home-container p {
         left: 42%;
-        top: 46%;
+        top: 51%;
         font-size: 12px;
     }
     .social-media {
-        top: 62%;
+        top: 68%;
         left: 48%;
     }
     .social-media a {
-        width: 30px;
-        height: 30px;
+        width: 26px;
+        height: 29px;
         margin: -30px 10px;
     }
     h3{
         font-size: 26px;
     }
     #about h3{
-        top: 64%;
+        top: 67%;
+        left: 4%;
+    }
+    .about-description {
+        padding: 0% 11px 9px 9px;
+        left: 18%;
+        margin-left: 5%;
+        margin-top: -6%;
+    }
+    .article {
+        gap: 20px;
+        padding: 36px 15% 0 10%;
+    }
+    .education #topic1 h3, .education #topic2 h3 {
+        top: 142%;
+    }
+    .education-container div {
+        width: 278px;
+    }
+    .education-container div p {
+        font-size: 11px;
+        margin-left: 22%;
+        margin-top: -14%;
+    }
+    .skills-container #first {
+        margin-top: -60%;
+    }
+
+    .skills-container div {
+        width: 93px;
+    }
+    .skills-container #second {
+        margin-left: 80%;
+        margin-top: -50%;
+    }
+    .skills-container #first-h3 {
+        font-size: 14px;
+        top: 156%;
+        left: 60%;
+    }
+    .skills-container #last-h3 {
+        font-size: 14px;
+        top: 235%;
+        left: 76%;
+    }
+    .project-container .project-name {
+        height: 29px/* calc(100%/4)*/;
+        width: 100%;
+    }
+    .project-container .project-info {
+        padding: 3%;
+        width: 100%;
+        height: 160px;
+    }
+    .project-container .project-info img {
+        width: 188px;
+        height: 119px;
+    }
+    .project-container .project-info p {
+        text-indent: 40px;
+        margin-top: -24%;
+        margin-left: 45%;
+        font-size: 12px;
+        text-align: justify;
+    }
+    /************************************************/
+    #assignment h3 {
+        top: 36%;
+    }
+    .assignment-container .drop {
+        width: 205px;
+        height: 183px;
+        margin-top: 5%;
     }
 
 }
