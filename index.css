@@ -1,6 +1,10 @@
 html{
     scroll-behavior: smooth;
 }
+:root{
+    --main-color: #fff65d;
+    --bg-color: #212121;
+}
 *{
     margin: 0;
     padding: 0;
@@ -9,17 +13,43 @@ html{
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-/*#preloader{*/
-/*    background: #212121;*/
-/*    background-size: cover;*/
-/*    height: 100vh;*/
-/*    width: 100%;*/
-/*    position: fixed;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*    z-index: 100;*/
-/*}*/
+.bubbles{
+    position: relative;
+    display: flex;
+}
+
+.bubbles span{
+    position: relative;
+    width: 3px;
+    height: 3px;
+    background: var(--main-color);
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #F0F696,
+    0 0 25px var(--main-color),
+    0 0 50px var(--main-color);
+    animation: bubble-anima 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+    z-index: -200;
+    opacity: 0.2;
+}
+@keyframes bubble-anima{
+    0%{
+        transform: translateY(140vh) scale(0);
+    }
+    100%{
+        transform: translateY(-0120vh) scale(0.5);
+    }
+}
+@keyframes bubble-anima{
+    0%{
+        transform: translateY(140vh) scale(0);
+    }
+    100%{
+        transform: translateY(-0120vh) scale(0.5);
+    }
+}
+
 body {
     background: #212121;
     color: white;
