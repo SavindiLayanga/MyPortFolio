@@ -671,6 +671,9 @@ h3{
     background-color: #2F2F2D;
     text-decoration: none;
 }
+.project-container .project-info a{
+    text-decoration: none;
+}
 .project-container .project-info:hover{
     transform: scale(0.97);
 }
@@ -926,6 +929,7 @@ h3{
     align-items: center;
     flex-direction: column;
     background-size: cover;
+    background-image: url("asset/images/Yellow-Wallpaper-High-Quality-removebg-preview - Copy.png");
 }
 
 /*.shadow-topic h1 {*/
@@ -963,12 +967,13 @@ h3{
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    margin-left: 10%;
+    margin-left: 2%;
 }
 .contact .container.contact-Info{
     width: 50%;
     display: flex;
     flex-direction: column;
+    margin-left: 10%;
 }
 .contact .container .contact-Info .text .contact-head{
     color: white;
@@ -1103,7 +1108,7 @@ footer{
     text-align: center;
     font-weight: bold;
     background: #212121;
-    padding: 10px 0;
+    padding: 0px 0;
     /*opacity: 0.5;*/
 }
 footer .copyright{
@@ -1850,7 +1855,7 @@ footer span{
 
     /**************************************/
     .contact .container {
-        margin-left: 60%;
+        margin-left: 8%;
     }
 
     .contact .container .contact-Info .text .contact-head {
@@ -1862,20 +1867,43 @@ footer span{
     }
 
     .contact-form {
-        margin-left: -59%;
-        margin-top: -11%;
-        width: 96%;
+        margin-left: -53%;
+        margin-top: 8%;
+        width: 53%;
         height: 262px;
     }
-
     .contact-form h2 {
         font-size: 21px;
         margin-top: -9%;
+    }
+    .submit-button {
+        top: -4px;
+        background-color: #212121;
+        left: 134px;
+        width: 79px;
+        height: 28px;
+        margin-top: 8px;
+        margin-bottom: 20px;
+        padding-left: 15px;
+    }
+    .contact {
+        min-height: 83vh;
     }
     footer {
         font-size: 12px;
     }
 }
+@media (max-width: 425px){
+    .contact .content h2 {
+        font-size: 31px;
+        margin-top: -28%;
+    }
+    .contact .container {
+        margin-left: -14%;
+    }
+
+}
+
 @media (max-width: 375px) {
     .home #my-img {
         margin-top: -14%;

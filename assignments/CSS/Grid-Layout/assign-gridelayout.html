@@ -31,6 +31,7 @@
             text-align: center;
             color: #FFFFFF;
             text-shadow: 2px 2px 5px yellow;
+            margin-left: -9%;
         }
         .assignment-container .drop{
             position: relative;
@@ -135,8 +136,8 @@
 
         @media (max-width: 1024px) {
             .assignment-container .drop {
-                width: 230px;
-                height: 230px;
+                width: 300px;
+                height: 300px;
             }
             .assignment-type {
                 font-size: 50px;
@@ -147,7 +148,7 @@
             }
         }
 
-        @media (max-width: 1024px) {
+        @media (max-width: 768px) {
             .assignment-type {
                 font-size: 60px;
             }
@@ -163,16 +164,30 @@
             }
         }
 
+        @media (max-width: 425px) {
+        .assignment-type {
+            position: absolute;
+            top: 27px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 56px;
+            text-align: center;
+            color: #FFFFFF;
+            text-shadow: 2px 2px 5px yellow;
+            margin-left: -16%;
+        }
+
     </style>
 </head>
 <body>
-<h1 class=" assignment-type" data-aos="fade-down">My Assignments</h1>
+<h1 class=" assignment-type" data-aos="fade-down">Gride Layout
+</h1>
 
 <div class="assignment-container">
     <a href="Assign-03/Case_05/index.html">
         <div class="drop" style="--clr:#212121;" data-aos="fade-up" data-aos-delay="1000">
             <div class="assign-content">
-                <h1 class="assign-number"> Using CSS Position </h1>
+                <h1 class="assign-number"> Case-01 </h1>
             </div>
         </div>
     </a>
@@ -180,7 +195,7 @@
     <a href="Assign-03/Case_06/index.html">
         <div class="drop" style="--clr:#212121;"data-aos="fade-up" data-aos-delay="1500">
             <div class="assign-content">
-                <h1 class="assign-number"> Transitions and KeyFrames </h1>
+                <h1 class="assign-number">Case-02 </h1>
             </div>
         </div>
     </a>
