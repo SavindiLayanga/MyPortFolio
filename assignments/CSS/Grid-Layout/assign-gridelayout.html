@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>My assignments</title>
 
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+
     <style>
         body{
             background-color: #212121;
@@ -92,14 +95,82 @@
             text-decoration: none; /* Remove underline from anchor elements */
         }
 
+        [data-aos="fade-down"] {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+
+        [data-aos="fade-down"].aos-animate {
+            opacity: 1;
+            transform: translateY(0);
+            transition-property: opacity, transform;
+            /* Adjust the duration and easing as needed */
+            transition-duration: 2ms;
+            transition-timing-function: ease-in-out;
+        }
+        /********************************/
+
+        @media (max-width:1440px) {
+
+        }
+        @media (max-width: 1024px) {
+            .assignment-type {
+                font-size: 40px;
+            }
+            .assignment-container .drop {
+                width: 200px;
+                height: 200px;
+            }
+            .assignment-container {
+                column-gap: 16px;
+                row-gap: 16px;
+            }
+            .assignment-container .drop .assign-content .assign-number {
+                font-size: 23px;
+            }
+        }
+
+        @media (max-width: 768px) {
+        }
+
+        @media (max-width: 1024px) {
+            .assignment-container .drop {
+                width: 230px;
+                height: 230px;
+            }
+            .assignment-type {
+                font-size: 50px;
+            }
+            .assignment-container {
+                column-gap: 22px;
+                row-gap: 22px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .assignment-type {
+                font-size: 60px;
+            }
+            .assignment-container .drop {
+                width: 325px;
+                height: 325px;
+            }
+            .assignment-container .drop .assign-content .assign-number {
+                font-size: 33px;
+            }
+            .assignment-container {
+                margin-top: 14%;
+            }
+        }
+
     </style>
 </head>
 <body>
-<h1 class=" assignment-type">My Assignments</h1>
+<h1 class=" assignment-type" data-aos="fade-down">My Assignments</h1>
 
 <div class="assignment-container">
     <a href="Assign-03/Case_05/index.html">
-        <div class="drop" style="--clr:#212121;">
+        <div class="drop" style="--clr:#212121;" data-aos="fade-up" data-aos-delay="1000">
             <div class="assign-content">
                 <h1 class="assign-number"> Using CSS Position </h1>
             </div>
@@ -107,7 +178,7 @@
     </a>
 
     <a href="Assign-03/Case_06/index.html">
-        <div class="drop" style="--clr:#212121;">
+        <div class="drop" style="--clr:#212121;"data-aos="fade-up" data-aos-delay="1500">
             <div class="assign-content">
                 <h1 class="assign-number"> Transitions and KeyFrames </h1>
             </div>
@@ -115,8 +186,9 @@
     </a>
 </div>
 
-<!--<a href="assign-gridelayout.html">-->
-<!--    <i class="fa-solid fa-backward fa-beat" style="color: #292b2e;"></i>-->
-<!--</a>-->
+<script>
+    AOS.init();
+</script>
+
 </body>
 </html>
