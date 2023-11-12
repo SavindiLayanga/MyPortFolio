@@ -813,6 +813,9 @@ h3{
     opacity: 1;
     color: #fff65d;
 }
+.assignment-container a {
+    text-decoration: none;
+}
 /*.assignment-container .drop .assign-content a::before{*/
 /*    content: '';*/
 /*    position: absolute;*/
