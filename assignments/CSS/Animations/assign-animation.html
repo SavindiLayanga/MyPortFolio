@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>My assignments</title>
 
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+
     <style>
         body{
             position: absolute;
@@ -113,6 +116,20 @@
         .assignment-container a {
             text-decoration: none; /* Remove underline from anchor elements */
         }
+
+        [data-aos="fade-down"] {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+
+        [data-aos="fade-down"].aos-animate {
+            opacity: 1;
+            transform: translateY(0);
+            transition-property: opacity, transform;
+            /* Adjust the duration and easing as needed */
+            transition-duration: 2ms;
+            transition-timing-function: ease-in-out;
+        }
        /********************************/
 
         @media (max-width:1440px) {
@@ -167,13 +184,15 @@
                 margin-top: 14%;
             }
         }
+
     </style>
 </head>
 <body>
-<h1 class=" assignment-type">CSS Animation</h1>
+<h1 class=" assignment-type" data-aos="fade-down">CSS Animation</h1>
 <div class="assignment-container">
+
     <a href="Assignment_04/Case_01/index.html">
-        <div class="drop" style="--clr:#212121;">
+        <div class="drop" style="--clr:#212121;" data-aos="fade-up" data-aos-delay="1000">
             <div class="assign-content">
                 <h1 class="assign-number"> Case-01</h1>
             </div>
@@ -181,16 +200,16 @@
     </a>
 
     <a href="Assignment_04/Case_02/index.html">
-        <div class="drop" style="--clr:#212121;">
+        <div class="drop" style="--clr:#212121;" data-aos="fade-up" data-aos-delay="1500">
              <div class="assign-content" >
-                   <h1 class="assign-number"> Case-02 </h1>
-              </div>
+                 <h1 class="assign-number"> Case-02 </h1>
+             </div>
          </div>
     </a>
 
 
     <a href="Assignment_04/Case_03/index.html">
-        <div class="drop" style="--clr:#212121;">
+        <div class="drop" style="--clr:#212121;" data-aos="fade-up" data-aos-delay="2000">
             <div class="assign-content">
                 <h1 class="assign-number"> Case-03</h1>
             </div>
@@ -198,7 +217,7 @@
     </a>
 
     <a href="Assignment_04/Case_04/index.html">
-        <div class="drop" style="--clr:#212121;">
+        <div class="drop" style="--clr:#212121;" data-aos="fade-up" data-aos-delay="2500">
             <div class="assign-content">
                 <h1 class="assign-number"> Case-04 </h1>
             </div>
@@ -206,7 +225,7 @@
     </a>
 
     <a href="Assignment_04/Case_05/index.html">
-        <div class="drop" style="--clr:#212121;">
+        <div class="drop" style="--clr:#212121;" data-aos="fade-up" data-aos-delay="3000">
             <div class="assign-content" >
                 <h1 class="assign-number">Case-05</h1>
             </div>
@@ -214,7 +233,7 @@
     </a>
 
     <a href="Assignment_04/Case_06/index.html">
-        <div class="drop" style="--clr:#212121;">
+        <div class="drop" style="--clr:#212121;" data-aos="fade-up" data-aos-delay="3500">
             <div class="assign-content">
                 <h1 class="assign-number"> Case-06 </h1>
             </div>
@@ -225,6 +244,9 @@
     </div>
 </div>
 
+<script>
+    AOS.init();
+</script>
 
 </body>
 </html>
