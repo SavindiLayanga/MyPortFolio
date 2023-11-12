@@ -9,9 +9,18 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="asset/normalize.css">
     <link rel="stylesheet" href="asset/fontawsome/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=3 minimum-scale=1 user-scalable=no">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/rolly.js@0.2.1/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
+<!--<div id="preloader">-->
+<!--    <img src="asset/images/loader.gif" height="100" width="100"/>-->
+<!--</div>-->
 
 <header class="header">
     <nav class="nav_bar">
@@ -28,7 +37,7 @@
 </header>
 
 <main>
-    <section class="home">
+    <section class="home" data-scene>
         <div class="rect"> </div>
 
         <div class="home-container">
@@ -65,8 +74,8 @@
                     <i class="fa-brands fa-github fa-flip" style="color: #FFF56D;"></i>
                 </a>
             </div>
-            <div class="status">
-                <div class="status-container">
+            <div class="status" data-aos="fade-up">
+                <div class="status-container" >
                     <span class="text first-text">I am </span>
                     <span class="text sec-text"># Front-End Developer</span>
                     <div class="line"></div>
@@ -75,66 +84,105 @@
         </div>
     </section>
 
-    <section id="about" class="about">
-        <div class="shadow-topic">
-            <h3 >A<br>B<br>O<br>U<br>T<br><br>M<br>E</h3>
+<div class="body-two">
+    <section id="about" class="about" data-scene>
+        <div class="shadow-topic" data-aos="fade-right">
+            <h3>A<br>B<br>O<br>U<br>T<br><br>M<br>E</h3>
         </div>
 
         <section class="details">
             <article class="article">
-                <section class="about-description">
+                <section class="about-description" data-aos="fade-up">
                     <!-- My Details -->
-                    <div class="about-details-heading">
+                    <div class="about-details-heading" data-aos="slide-up">
                         <h2>Hello,<span>  I'm Savindi Layanga</span></h2>
                     </div>
                     <br>
 
-                    <p>
-                         I’m 21 years old young and highly active enthusiast. I’m a UI/UX designer living in Matara, Sri Lanka. I’m currently studying in Institute Software Engineering (IJSE) in branch Panadura. My interests are in Front End Engineering. I have a good knowledge of Java. I most like to designing parts in software more than back end parts.
+                    <p data-aos="slide-up">
+                        I’m 21 years old young and highly active enthusiast. I’m a UI/UX designer living in Matara, Sri Lanka. I’m currently studying in Institute Software Engineering (IJSE) in branch Panadura. My interests are in Front End Engineering. I have a good knowledge of Java. I most like to design parts in software more than back end parts.
                     </p>
 
                     <a href="asset/CV/Savindi_Layanga_CV.pdf" target="_blank">
-                        <button>Download CV
-                            <i class="fa-solid fa-download" style="color: white"></i>
-                        </button>
+                        <button data-aos="fade-up">Download CV <i class="fa-solid fa-download" style="color: white"></i></button>
                     </a>
                 </section>
-                <div class="image-container">
+
+                <div class="image-container" data-aos="fade-up">
                     <div class="img-box">
-                        <!--                        <img src="asset/images/gallery/WhatsApp%20Image%202023-07-12%20at%2022.50.51.11.jpg"/>-->
+                        <!-- <img src="asset/images/gallery/WhatsApp%20Image%202023-07-12%20at%2022.50.51.11.jpg"/> -->
                     </div>
                     <div class="rotate-text">
                         <div class="text">
-                            <!--<p>I am front end developer And I am graphic designer</p>-->
+                            <!-- <p>I am front end developer And I am a graphic designer</p> -->
                         </div>
                         <span><i></i></span>
                     </div>
                 </div>
             </article>
         </section>
-        </div>
     </section>
+<!--    <section id="about" class="about" data-scene>-->
+<!--        <div class="shadow-topic">-->
+<!--            <h3 >A<br>B<br>O<br>U<br>T<br><br>M<br>E</h3>-->
+<!--        </div>-->
 
-    <section class="education" id="education">
-        <div id="topic1">
+<!--        <section class="details">-->
+<!--            <article class="article">-->
+<!--                <section class="about-description">-->
+<!--                    &lt;!&ndash; My Details &ndash;&gt;-->
+<!--                    <div class="about-details-heading">-->
+<!--                        <h2>Hello,<span>  I'm Savindi Layanga</span></h2>-->
+<!--                    </div>-->
+<!--                    <br>-->
+
+<!--                    <p>-->
+<!--                         I’m 21 years old young and highly active enthusiast. I’m a UI/UX designer living in Matara, Sri Lanka. I’m currently studying in Institute Software Engineering (IJSE) in branch Panadura. My interests are in Front End Engineering. I have a good knowledge of Java. I most like to designing parts in software more than back end parts.-->
+<!--                    </p>-->
+
+<!--                    <a href="asset/CV/Savindi_Layanga_CV.pdf" target="_blank">-->
+<!--                        <button>Download CV-->
+<!--                            <i class="fa-solid fa-download" style="color: white"></i>-->
+<!--                        </button>-->
+<!--                    </a>-->
+<!--                </section>-->
+
+<!--                <div class="image-container" data-aos="fade-up">-->
+<!--                    <div class="img-box" >-->
+<!--                        &lt;!&ndash;                        <img src="asset/images/gallery/WhatsApp%20Image%202023-07-12%20at%2022.50.51.11.jpg"/>&ndash;&gt;-->
+<!--                    </div>-->
+<!--                    <div class="rotate-text">-->
+<!--                        <div class="text">-->
+<!--                            &lt;!&ndash;<p>I am front end developer And I am graphic designer</p>&ndash;&gt;-->
+<!--                        </div>-->
+<!--                        <span><i></i></span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </article>-->
+<!--        </section>-->
+<!--        </div>-->
+<!--    </section>-->
+
+    <section class="education" id="education" data-scene>
+        <div id="topic1" data-aos="fade-right">
             <h3 >E<br>D<br>U<br>C<br>A<br>T<br>I<br>O<br>N</h3>
         </div>
 
-        <div id="topic2">
+        <div id="topic2" data-aos="fade-left">
             <h3 >S<br>K<br>I<br>L<br>L<br>S</h3>
         </div>
 
         <div class="education-container-box">
             <div class="education-container">
 
-                <div>
+                <div data-aos="fade-up">
                     <img src="asset/images/icons/school_FILL0_wght400_GRAD0_opsz48%20-%20Copy.png" alt="ijse">
                     <p>
                         BSc (Hons) In <span>Computer Science</span> Institute Of Software Engineering Panadura.
                     </p>
                 </div>
 
-                <div>
+                <div data-aos="fade-up">
                     <img src="asset/images/icons/school_FILL0_wght400_GRAD0_opsz48%20-%20Copy.png" alt="A/L">
                     <p>
                         <span>2021 A/L - Engineering Technology Stream</span>
@@ -142,7 +190,7 @@
                     </p>
                 </div>
 
-                <div>
+                <div data-aos="fade-up">
                     <img src="asset/images/icons/school_FILL0_wght400_GRAD0_opsz48%20-%20Copy.png" alt="O/L">
                     <p>
                         <span>2018 O/L</span> - Sinhala Medium
@@ -151,8 +199,8 @@
                 </div>
             </div>
 
-            <div class="skills-container">
-                <h3 id="first-h3">Languages</h3>
+            <div class="skills-container" data-aos="fade-up">
+<!--                <h3 id="first-h3">Languages</h3>-->
                 <div id="first">
                     <img id="java" src="asset/images/languages-img/Java-Emblem-removebg-preview.png" alt="Java">
                     <h2 class="lang">  Java</h2>
@@ -170,7 +218,7 @@
                     <h2 class="lang"> CSS</h2>
                 </div>
 
-                <h3 id="last-h3">Softwares</h3>
+<!--                <h3 id="last-h3">Softwares</h3>-->
                 <div id="second">
                     <img id="figma" src="asset/images/skills-img/2f4e4570-ef9e-4fbf-9cfc-4fb952c47385-cover.png" alt="figma">
                     <h2 class="skills"> Figma</h2>
@@ -183,50 +231,189 @@
                 </div>
             </div>
         </div>
+        <div class="bubbles">
+            <span style="--i:23;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:30;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:31;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:30;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:31;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:32;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:33;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:30;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:31;"></span>
+            <span style="--i:18;"></span>
+        </div>
     </section>
 
     <section class="projects" id="projects">
-        <div>
+        <div data-aos="fade-right">
             <h3 >P<br>R<br>O<br>J<br>E<br>C<br>T<br>S</h3>
         </div>
 
         <section class="project">
             <div class="project-container-box">
 
-                <div class="project-container">
+                <div class="project-container" >
 
-                    <div class="project-name"> 01. Library Management System</div>
-                    <div class="project-info">
-                        <img src="asset/images/project-img/Screenshot%20(428)%20-%20Copy.png" alt="project -01">
-                        <p>
-                            This is my first project. I have designed this for Matara Kumaratunga Munidasa Library Management System which is a software application designed to efficiently manage library resources including books, journals, membership records and related operations using mvc architecture.
-                        </p>
-                        <a href="https://github.com/SavindiLayanga/LibraryFinal.git" target="_blank">
-<!--                            <i class="fa-solid fa-arrow-right fa-beat fa-xl" style="color: #72767e;"></i>-->
-                        </a>
-                    </div>
+                    <div class="project-name" data-aos="fade-up"> 01. Library Management System </div >
+                    <a href="https://github.com/SavindiLayanga/LibraryFinal.git" >
+                        <div class="project-info" data-aos="fade-up">
+                            <img src="asset/images/project-img/Screenshot%20(428)%20-%20Copy.png" alt="project -01">
+                            <p>
+                                This is my first project. I have designed this for Matara Kumaratunga Munidasa Library Management System which is a software application designed to efficiently manage library resources including books, journals, membership records and related operations using mvc architecture.
+                            </p>
+                            <a href="https://github.com/SavindiLayanga/LibraryFinal.git" target="_blank">
+                                <!--                            <i class="fa-solid fa-arrow-right fa-beat fa-xl" style="color: #72767e;"></i>-->
+                            </a>
+                        </div>
+                    </a>
 
-                    <div class="project-name"> 02. Connect Four Game </div>
-                    <div class="project-info">
-                        <img src="asset/images/project-img/Screenshot%20(598)%20-%20Copy.png" alt="project-02">
-                        <p>
-                            This is my OOP coursework project. Connect Four is a classic two-player connection game known for its simplicity and strategic depth. It was first released by Milton Bradley (now part of Hasbro) in 1974 and has since become a popular board game and computer game. Here's an overview of the game:
-                        </p>
-                        <a href="https://github.com/SavindiLayanga/LibraryFinal.git" target="_blank">
-<!--                            <i class="fa-solid fa-arrow-right fa-beat fa-xl" style="color: #72767e;"></i>-->
-                        </a>
-                    </div>
 
-                    <div class="project-name"> 03. Hostel Management System </div>
-                    <div class="project-info">
-                        <img src="asset/images/project-img/Screenshot%20(694).png" alt="project-03">
-                        <p>
-                            A Hostel Management System using Hibernate is a software application designed to efficiently manage and automate the various aspects of running a hostel or dormitory.
-                        </p>
-                        <a href="https://github.com/SavindiLayanga/LibraryFinal.git" target="_blank">
-<!--                            <i class="fa-solid fa-arrow-right fa-beat fa-xl" style="color: #72767e;"></i>-->
-                        </a>
-                    </div>
+                    <div class="project-name" data-aos="fade-up"> 02. Connect Four Game </div>
+                    <a href="https://github.com/SavindiLayanga/Connect_Four.git" >
+                        <div class="project-info" data-aos="fade-up">
+                            <img src="asset/images/project-img/Screenshot%20(598)%20-%20Copy.png" alt="project-02">
+                            <p>
+                                This is my OOP coursework project. Connect Four is a classic two-player connection game known for its simplicity and strategic depth. It was first released by Milton Bradley (now part of Hasbro) in 1974 and has since become a popular board game and computer game. Here's an overview of the game:
+                            </p>
+                            <a href="https://github.com/SavindiLayanga/LibraryFinal.git" target="_blank">
+                                <!--                            <i class="fa-solid fa-arrow-right fa-beat fa-xl" style="color: #72767e;"></i>-->
+                            </a>
+                        </div>
+                    </a>
+
+                    <div class="project-name" data-aos="fade-up"> 03. Hostel Management System </div>
+                    <a href="https://github.com/SavindiLayanga/d24-hibernate.git" >
+                        <div class="project-info" data-aos="fade-up">
+                            <img src="asset/images/project-img/Screenshot%20(694).png" alt="project-03">
+                            <p>
+                                A Hostel Management System using Hibernate is a software application designed to efficiently manage and automate the various aspects of running a hostel or dormitory.
+                            </p>
+                            <a href="https://github.com/SavindiLayanga/LibraryFinal.git" target="_blank">
+                                <!--                            <i class="fa-solid fa-arrow-right fa-beat fa-xl" style="color: #72767e;"></i>-->
+                            </a>
+                        </div>
+                    </a>
+
 
 <!--                    <div class="project-name"></div>-->
 <!--                    <div class="project-info">-->
@@ -240,16 +427,147 @@
 <!--                    </div>-->
                 </div>
             </div>
+            <div class="bubbles">
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:30;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:31;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:30;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:31;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:32;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:33;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:30;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:31;"></span>
+                <span style="--i:18;"></span>
+            </div>
         </section>
 
     <section class="assignment" id="assignment">
-        <div>
+        <div data-aos="fade-right">
             <h3 >A<br>S<br>S<br>I<br>G<br>N<br>M<br>E<br>N<br>T</h3>
         </div>
 
         <div class="assignment-container">
 
-            <div class="drop" style="--clr:#212121;">
+            <div class="drop" style="--clr:#212121;" data-aos="fade-up" data-aos-delay="500">
                 <a href="assignments/CSS/Animations/assign-animation.html">
                     <div class="assign-content">
                         <h1 class="assign-number"> Animations </h1>
@@ -257,52 +575,175 @@
                 </a>
             </div>
 
-            <div class="drop" style="--clr:#212121;">
-                <a href="assignments/CSS/Boostrap">
-                    <div class="assign-content">
-                        <h1 class="assign-number"> Transitions and KeyFrames </h1>
+            <div class="drop" style="--clr:#212121;" data-aos="fade-up" data-aos-delay="4000">
+                <a href="assignments/CSS/Grid-Layout/assign-gridelayout.html">
+                    <div class="assign-content" onclick="openNewPage()">
+                        <h1 class="assign-number"> CSS Grid Layout </h1>
+                        </p>
                     </div>
                 </a>
             </div>
 
-            <div class="drop" style="--clr:#212121;">
-                <a href=""></a>
-                <div class="assign-content">
-                    <h1 class="assign-number"> POS System</h1>
-                    <p class="assign-para"></p>
-                </div>
+            <div class="drop" style="--clr:#212121;" data-aos="fade-up" data-aos-delay="1000">
+                <a href="assignments/CSS/Positioning/assign-position.html">
+                    <div class="assign-content">
+                        <h1 class="assign-number"> CSS Positioning</h1>
+                    </div>
+                </a>
             </div>
 
-            <div class="drop" style="--clr:#212121;">
-                <div class="assign-content" onclick="openNewPage()">
-                    <h1 class="assign-number">  DOM Manipulation With JavaScript </h1>
-<!--                    <p class="assign-para">-->
-<!--                    <ul>-->
-<!--                        <li> Case 01 - Que Process</li>-->
-<!--                        <li> Case 02 - JQueue</li>-->
-<!--                    </ul>-->
-<!--                    </p>-->
-                </div>
+            <div class="drop" style="--clr:#212121;" data-aos="fade-up" data-aos-delay="1500">
+                <a href="assignments/CSS/js-frame/assignment-js.html">
+                    <div class="assign-content">
+                        <h1 class="assign-number"> JS Frameworks</h1>
+                    </div>
+                </a>
             </div>
 
-            <div class="drop" style="--clr:#212121;">
-                <div class="assign-content" onclick="openNewPage()">
-                    <h1 class="assign-number"> Using CSS Position </h1>
-<!--                    <p class="assign-para">-->
-<!--                    <ul>-->
-<!--                        <li> Case - 01</li>-->
-<!--                        <li> Case - 02</li>-->
-<!--                        <li> Case - 03</li>-->
-<!--                        <li> Case - 04</li>-->
-<!--                        <li> Case - 05</li>-->
-<!--                        <li> Case - 06</li>-->
-<!--                    </ul>-->
-<!--                    </p>-->
-                </div>
+            <div class="drop" style="--clr:#212121;" data-aos="fade-up" data-aos-delay="1000">
+                <a href="assignments/CSS/Boostrap/POS%20system/index.html">
+                    <div class="assign-content" >
+                        <h1 class="assign-number"> POS System </h1>
+                    </div>
+                </a>
+
             </div>
+
+
 <!--            <button class="back-button">-->
 <!--                <i class="fa-solid fa-backward fa-beat" style="color: #36383a;"></i>-->
 <!--            </button>-->
+        </div>
+        <div class="bubbles">
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:30;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:31;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:30;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:31;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:32;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:33;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:30;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:31;"></span>
+            <span style="--i:18;"></span>
         </div>
     </section>
 
@@ -315,33 +756,164 @@
 
         <div class="gallery-container">
             <div class="column">
-                <img id="img1" src="asset/images/gallery/WhatsApp%20Image%202023-07-12%20at%2022.50.51.11.jpg">
-                <img id="img2" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.29.00_0607d09f.jpg"/>
-                <img id="img3" src="asset/images/gallery/WhatsApp%20Image%202023-07-06%20at%2021.45.03.jpg"/>
+                <img id="img1" src="asset/images/gallery/WhatsApp%20Image%202023-07-12%20at%2022.50.51.11.jpg" data-aos="zoom-in"/>
+                <img id="img2" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.29.00_0607d09f.jpg" data-aos="zoom-in"/>
+                <img id="img3" src="asset/images/gallery/WhatsApp%20Image%202023-07-06%20at%2021.45.03.jpg" data-aos="zoom-in"/>
             </div>
             <div class="column">
-                <img id="img4" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.29.01_6fa44daa.jpg"/>
-                <img id="img5" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.37.39_2a98c36c.jpg"/>
-                <img id="img6" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.37.41_39441ecf.jpg"/>
-                <img id="img7" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.37.40_f52a66eb.jpg"/>
+                <img id="img4" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.29.01_6fa44daa.jpg" data-aos="zoom-in"/>
+                <img id="img5" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.37.39_2a98c36c.jpg" data-aos="zoom-in"/>
+                <img id="img6" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.37.41_39441ecf.jpg" data-aos="zoom-in"/>
+                <img id="img7" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.37.40_f52a66eb.jpg" data-aos="zoom-in"/>
             </div>
-            <div class="column">
-                <img id="img8" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.29.00_eb4936d0.jpg"/>
-                <img id="img9" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2013.03.52_685f3b94.jpg"/>
-                <img id="img10" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.29.01_be770e65.jpg"/>
+            <div class="column" data-aos="fade-up">
+                <img id="img8" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.29.00_eb4936d0.jpg" data-aos="zoom-in"/>
+                <img id="img9" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2013.03.52_685f3b94.jpg" data-aos="zoom-in"/>
+                <img id="img10" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.29.01_be770e65.jpg" data-aos="zoom-in"/>
             </div>
         </div>
     </section>
-    </section>
+
+        <div class="bubbles">
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:30;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:31;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:30;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:31;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:32;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:33;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:30;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:31;"></span>
+            <span style="--i:18;"></span>
+        </div>
 
     <section class="contact" id="contact">
-        <div class="content">
-            <h2> Contact Me </h2>
+        <div class="content" data-aos="fade-up">
+            <h2 data-aos="fade-in"> Contact Me </h2>
             <p> If you could touch my creative mind ,,, <br>
                 I’m always open to discussing new projects, creative ideas and designs to be part of your vision ...
             </p>
         </div>
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="contact-Info">
 
                 <div class="InputBox">
@@ -394,53 +966,128 @@
 
                     <div class="inputBox">
                         <textarea required="required"></textarea>
-                        <span> Type your Message...</span>
+                        <span> Type your Message</span>
                     </div>
-                    <div class="inputBox">
-                        <input type="submit" name="" value="Send">
-                    </div>
+
+                    <input class="submit-button" type="submit" name="" value="Send">
+
                 </form>
             </div>
         </div>
-<!--        <div>-->
-<!--            <h3 >C<br>O<br>N<br>T<br>A<br>C<br>T<br><br>M<br>E</h3>-->
-<!--        </div>-->
-<!--        <div class="shadow-topic">-->
-<!--            <h1>Contact Me</h1>-->
-<!--        </div>-->
         </section>
-    <footer data-scene>Copyright © 2023 <span>Savindi Layanga</span> | All Rights Reserved</footer>
+    <footer data-scene>
+        <div id="waves">
+            <div>  </div>
+            <div>  </div>
+            <div> </div>
+            <div> </div>
+        </div>
+        <div class="copyright">
+            Copyright © 2023 <span>Savindi Layanga</span> | All Rights Reserved
+        </div>
+    </footer>
     </section>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/rolly.js@0.2.1/dist/rolly.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        /*/!*preloader*!/
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load",function (){
+            loader.style.display = "none";
+        })
+
+        /!*scroll section*!/
+        let sections = document.querySelectorAll('section');
+        let section = document.querySelectorAll('header nav a');
+
+        window.onscroll = () =>{
+            /!*sticky header*!/
+            let header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY>100);
+
+            /!*remove icon and navbar when click navbar*!/
+            menuIcon.classList.remove('bx-x');
+            navbar.classList.remove('active');
+        }
+
+
+        /!*menu icon*!/
+        let menuIcon = document.querySelector('#menu-icon');
+        let navbar =document.querySelector('.nav_bar');
+
+        menuIcon.onclick = () =>{
+            menuIcon.classList.toggle('bx-x');
+            navbar.classList.toggle('active');
+        }
+
+        /!*home section multi typing*!/
+        const text = document.querySelector(".sec-text");
+        const textLoad = () => {
+            setTimeout(() =>{
+                text.textContent = "Front-End Developer";
+            },0);
+            setTimeout(() =>{
+                text.textContent = "Graphic Designer";
+            },4000);
+        }
+        textLoad();
+        setInterval(textLoad,8000);
+
+        /!*portfolio filter*!/
+        const filterButtons = document.querySelector("#filter-btns").children;
+        const items = document.querySelector(".portfolio-gallery").children;
+
+        for (let  i =0; i< filterButtons.length; i++){
+            filterButtons[i].addEventListener("click", function (){
+                for (let  j=0; j<filterButtons.length;j++){
+                    filterButtons[j].classList.remove("active")
+                }
+                this.classList.add("active");
+                const target = this.getAttribute("data-target")
+
+                for (let k=0; k<items.length;k++){
+                    items[k].style.display = "none";
+                    if (target == items[k].getAttribute("data-id")){
+                        items[k].style.display = "block";
+                    }
+                    if (target == "all"){
+                        items[k].style.display = "block";
+                    }
+                }
+            })
+
+        }
+
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "savindilayanga.com",
+                Password : "F4C7B6210FA110A964B2B729C0D4BA6D05D2",
+                To : 'savindilayanga@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Content From Enquiry",
+                Body : "Name"+ document.getElementById("name").value
+                    +"Email"+ document.getElementById("email").value
+                    +"Message"+ document.getElementById("message").value
+            }).then(
+                message => alert("message sent successfully")
+            );
+        }*/
+        // var loader = document.getElementById("preloader");
+        // window.addEventListener("load",function (){
+        //     loader.style.display = "none";
+        // })
+
+            AOS.init(
+                {
+                    duration: 1000
+                }
+            );
+        </script>
+    </div>
 </main>
-
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-
-<script>
-    function openNewPage() {
-        // Replace 'new-page.html' with the URL of the page you want to open
-        window.open('new-page.html', '_blank');
-    }
-</script>
-
-<!--<script>-->
-<!--    function sendEmail(){-->
-<!--        Email.send({-->
-<!--            Host : "smtp.gmail.com",-->
-<!--            Username : "savindi@gmail.com",-->
-<!--            Password : "savi#123",-->
-<!--            To : "savindilayanga@gmail.com",-->
-<!--            From : document.getElementById("email").value,-->
-<!--            Subject : "New Contact Form Enquiry ",-->
-<!--            Body : "Name: "+document.getElementById("name").value-->
-<!--                + "<br> Email: " + document.getElementById("email").value()-->
-<!--                + "<br> Phone no: " + document.getElementById("phone-num").value()-->
-<!--                + "<br> Message: " + document.getElementById("message").value()-->
-<!--        }).then(-->
-<!--            message => alert("message sent successfully")-->
-<!--        );-->
-<!--    }-->
-<!--</script>-->
-
-
 </body>
 </html>
