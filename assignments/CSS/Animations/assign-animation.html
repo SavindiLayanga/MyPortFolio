@@ -113,16 +113,60 @@
         .assignment-container a {
             text-decoration: none; /* Remove underline from anchor elements */
         }
-        /*.up-arrow i{*/
-        /*    font-size: 40px;*/
-        /*    position: fixed;*/
-        /*    bottom: 20px;*/
-        /*    right: 20px;*/
-        /*    margin: auto;*/
-        /*    color: red;*/
-        /*    z-index: 100;*/
-        /*}*/
+       /********************************/
 
+        @media (max-width:1440px) {
+
+        }
+        @media (max-width: 1024px) {
+            .assignment-type {
+                font-size: 40px;
+            }
+            .assignment-container .drop {
+                width: 200px;
+                height: 200px;
+            }
+            .assignment-container {
+                column-gap: 16px;
+                row-gap: 16px;
+            }
+            .assignment-container .drop .assign-content .assign-number {
+                font-size: 23px;
+            }
+        }
+
+        @media (max-width: 768px) {
+        }
+
+        @media (max-width: 1024px) {
+            .assignment-container .drop {
+                width: 230px;
+                height: 230px;
+            }
+            .assignment-type {
+                font-size: 50px;
+            }
+            .assignment-container {
+                column-gap: 22px;
+                row-gap: 22px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .assignment-type {
+                font-size: 60px;
+            }
+            .assignment-container .drop {
+                width: 325px;
+                height: 325px;
+            }
+            .assignment-container .drop .assign-content .assign-number {
+                font-size: 33px;
+            }
+            .assignment-container {
+                margin-top: 14%;
+            }
+        }
     </style>
 </head>
 <body>
