@@ -16,7 +16,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
+<!--<div id="preloader">-->
+<!--    <img src="asset/images/loader.gif" height="100" width="100"/>-->
+<!--</div>-->
 
 <header class="header">
     <nav class="nav_bar">
@@ -81,7 +85,7 @@
     </section>
 
     <section id="about" class="about" data-scene>
-        <div class="shadow-topic">
+        <div class="shadow-topic" data-aos="fade-right">
             <h3>A<br>B<br>O<br>U<br>T<br><br>M<br>E</h3>
         </div>
 
@@ -159,11 +163,11 @@
 <!--    </section>-->
 
     <section class="education" id="education" data-scene>
-        <div id="topic1" >
+        <div id="topic1" data-aos="fade-right">
             <h3 >E<br>D<br>U<br>C<br>A<br>T<br>I<br>O<br>N</h3>
         </div>
 
-        <div id="topic2">
+        <div id="topic2" data-aos="fade-left">
             <h3 >S<br>K<br>I<br>L<br>L<br>S</h3>
         </div>
 
@@ -195,7 +199,7 @@
             </div>
 
             <div class="skills-container" data-aos="fade-up">
-                <h3 id="first-h3">Languages</h3>
+<!--                <h3 id="first-h3">Languages</h3>-->
                 <div id="first">
                     <img id="java" src="asset/images/languages-img/Java-Emblem-removebg-preview.png" alt="Java">
                     <h2 class="lang">  Java</h2>
@@ -213,7 +217,7 @@
                     <h2 class="lang"> CSS</h2>
                 </div>
 
-                <h3 id="last-h3">Softwares</h3>
+<!--                <h3 id="last-h3">Softwares</h3>-->
                 <div id="second">
                     <img id="figma" src="asset/images/skills-img/2f4e4570-ef9e-4fbf-9cfc-4fb952c47385-cover.png" alt="figma">
                     <h2 class="skills"> Figma</h2>
@@ -229,7 +233,7 @@
     </section>
 
     <section class="projects" id="projects">
-        <div>
+        <div data-aos="fade-right">
             <h3 >P<br>R<br>O<br>J<br>E<br>C<br>T<br>S</h3>
         </div>
 
@@ -294,13 +298,13 @@
         </section>
 
     <section class="assignment" id="assignment">
-        <div>
+        <div data-aos="fade-right">
             <h3 >A<br>S<br>S<br>I<br>G<br>N<br>M<br>E<br>N<br>T</h3>
         </div>
 
         <div class="assignment-container">
 
-            <div class="drop" style="--clr:#212121;" data-aos="fade-up">
+            <div class="drop" style="--clr:#212121;" data-aos="fade-up" data-aos-delay="500">
                 <a href="assignments/CSS/Animations/assign-animation.html">
                     <div class="assign-content">
                         <h1 class="assign-number"> Animations </h1>
@@ -308,7 +312,7 @@
                 </a>
             </div>
 
-            <div class="drop" style="--clr:#212121;" data-aos="fade-up">
+            <div class="drop" style="--clr:#212121;" data-aos="fade-up" data-aos-delay="1000">
                 <a href="assignments/CSS/Boostrap">
                     <div class="assign-content">
                         <h1 class="assign-number"> Transitions and KeyFrames </h1>
@@ -316,7 +320,7 @@
                 </a>
             </div>
 
-            <div class="drop" style="--clr:#212121;" data-aos="fade-up">
+            <div class="drop" style="--clr:#212121;" data-aos="fade-up" data-aos-delay="1500">
                 <a href=""></a>
                 <div class="assign-content">
                     <h1 class="assign-number"> POS System</h1>
@@ -324,31 +328,17 @@
                 </div>
             </div>
 
-            <div class="drop" style="--clr:#212121;" data-aos="fade-up">
+            <div class="drop" style="--clr:#212121;" data-aos="fade-up" data-aos-delay="1000">
                 <div class="assign-content" onclick="openNewPage()">
                     <h1 class="assign-number">  DOM Manipulation With JavaScript </h1>
-<!--                    <p class="assign-para">-->
-<!--                    <ul>-->
-<!--                        <li> Case 01 - Que Process</li>-->
-<!--                        <li> Case 02 - JQueue</li>-->
-<!--                    </ul>-->
-<!--                    </p>-->
                 </div>
             </div>
 
-            <div class="drop" style="--clr:#212121;" data-aos="fade-up">
+            <div class="drop" style="--clr:#212121;" data-aos="fade-up" data-aos-delay="4000">
                 <div class="assign-content" onclick="openNewPage()">
                     <h1 class="assign-number"> Using CSS Position </h1>
-<!--                    <p class="assign-para">-->
-<!--                    <ul>-->
-<!--                        <li> Case - 01</li>-->
-<!--                        <li> Case - 02</li>-->
-<!--                        <li> Case - 03</li>-->
-<!--                        <li> Case - 04</li>-->
-<!--                        <li> Case - 05</li>-->
-<!--                        <li> Case - 06</li>-->
-<!--                    </ul>-->
-<!--                    </p>-->
+                    <p class="assign-para">
+                    </p>
                 </div>
             </div>
 <!--            <button class="back-button">-->
@@ -365,21 +355,21 @@
 <!--        <img id="background-img" src="asset/images/gallery/Capture.PNG" alt="be">-->
 
         <div class="gallery-container">
-            <div class="column" data-aos="fade-up">
-                <img id="img1" src="asset/images/gallery/WhatsApp%20Image%202023-07-12%20at%2022.50.51.11.jpg">
-                <img id="img2" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.29.00_0607d09f.jpg"/>
-                <img id="img3" src="asset/images/gallery/WhatsApp%20Image%202023-07-06%20at%2021.45.03.jpg"/>
+            <div class="column">
+                <img id="img1" src="asset/images/gallery/WhatsApp%20Image%202023-07-12%20at%2022.50.51.11.jpg" data-aos="zoom-in"/>
+                <img id="img2" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.29.00_0607d09f.jpg" data-aos="zoom-in"/>
+                <img id="img3" src="asset/images/gallery/WhatsApp%20Image%202023-07-06%20at%2021.45.03.jpg" data-aos="zoom-in"/>
+            </div>
+            <div class="column">
+                <img id="img4" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.29.01_6fa44daa.jpg" data-aos="zoom-in"/>
+                <img id="img5" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.37.39_2a98c36c.jpg" data-aos="zoom-in"/>
+                <img id="img6" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.37.41_39441ecf.jpg" data-aos="zoom-in"/>
+                <img id="img7" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.37.40_f52a66eb.jpg" data-aos="zoom-in"/>
             </div>
             <div class="column" data-aos="fade-up">
-                <img id="img4" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.29.01_6fa44daa.jpg"/>
-                <img id="img5" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.37.39_2a98c36c.jpg"/>
-                <img id="img6" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.37.41_39441ecf.jpg"/>
-                <img id="img7" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.37.40_f52a66eb.jpg"/>
-            </div>
-            <div class="column" data-aos="fade-up">
-                <img id="img8" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.29.00_eb4936d0.jpg"/>
-                <img id="img9" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2013.03.52_685f3b94.jpg"/>
-                <img id="img10" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.29.01_be770e65.jpg"/>
+                <img id="img8" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.29.00_eb4936d0.jpg" data-aos="zoom-in"/>
+                <img id="img9" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2013.03.52_685f3b94.jpg" data-aos="zoom-in"/>
+                <img id="img10" src="asset/images/gallery/WhatsApp%20Image%202023-11-03%20at%2012.29.01_be770e65.jpg" data-aos="zoom-in"/>
             </div>
         </div>
     </section>
@@ -387,7 +377,7 @@
 
     <section class="contact" id="contact">
         <div class="content" data-aos="fade-up">
-            <h2> Contact Me </h2>
+            <h2 data-aos="fade-in"> Contact Me </h2>
             <p> If you could touch my creative mind ,,, <br>
                 I’m always open to discussing new projects, creative ideas and designs to be part of your vision ...
             </p>
@@ -430,7 +420,7 @@
             </div>
             <br>
 
-            <div class="contact-form">
+            <di class="contact-form">
                 <form action="">
                     <h2>Have you any Questions ? </h2>
                     <div class="inputBox">
@@ -445,11 +435,11 @@
 
                     <div class="inputBox">
                         <textarea required="required"></textarea>
-                        <span> Type your Message...</span>
+                        <span> Type your Message</span>
                     </div>
-                    <div class="inputBox">
-                        <input type="submit" name="" value="Send">
-                    </div>
+
+                    <input class="submit-button" type="submit" name="" value="Send">
+
                 </form>
             </div>
         </div>
@@ -460,7 +450,17 @@
 <!--            <h1>Contact Me</h1>-->
 <!--        </div>-->
         </section>
-    <footer data-scene>Copyright © 2023 <span>Savindi Layanga</span> | All Rights Reserved</footer>
+    <footer data-scene>
+        <div id="waves">
+            <div>  </div>
+            <div>  </div>
+            <div> </div>
+            <div> </div>
+        </div>
+        <div class="copyright">
+            Copyright © 2023 <span>Savindi Layanga</span> | All Rights Reserved
+        </div>
+    </footer>
     </section>
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -551,6 +551,10 @@
                 message => alert("message sent successfully")
             );
         }*/
+        // var loader = document.getElementById("preloader");
+        // window.addEventListener("load",function (){
+        //     loader.style.display = "none";
+        // })
 
             AOS.init(
                 {

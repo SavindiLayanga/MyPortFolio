@@ -1,7 +1,6 @@
 html{
     scroll-behavior: smooth;
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -10,52 +9,60 @@ html{
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
+/*#preloader{*/
+/*    background: #212121;*/
+/*    background-size: cover;*/
+/*    height: 100vh;*/
+/*    width: 100%;*/
+/*    position: fixed;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    z-index: 100;*/
+/*}*/
 body {
     background: #212121;
     color: white;
     overflow-x: hidden;
+    animation: backgroundAnimation 5s infinite alternate;
 }
 
-/*.header{*/
-/*    position: fixed;*/
-/*    width: 100%;*/
-/*    right: 0;*/
-/*    left: 0;*/
-/*    display: flex;*/
-/*    padding: 30px 10%;*/
-/*    justify-content: space-between;*/
-/*    align-items: center;*/
-/*    z-index: 100;*/
-/*    background: #2C3333;*/
-/*    height: 50px;*/
-/*    !*opacity: 0.9;*!*/
-/*}*/
-.header {
+.header{
     position: fixed;
-    /*width: 100%;*/
-    height: 60px;
+    width: 100%;
+    right: 0;
+    left: 0;
     display: flex;
-    padding: 10px 10%;
+    padding: 30px 10%;
+    justify-content: space-between;
+    align-items: center;
     z-index: 100;
     background: #2C3333;
-    align-items: center;
-    justify-content: center;
-    /* opacity: 0.9; */
+    height: 50px;
+    /*opacity: 0.9;*/
 }
-
+/*.header {*/
+/*    position: fixed;*/
+/*    !*width: 100%;*!*/
+/*    height: 60px;*/
+/*    display: flex;*/
+/*    padding: 10px 10%;*/
+/*    z-index: 100;*/
+/*    background: #2C3333;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    !* opacity: 0.9; *!*/
+/*}*/
 .nav_bar{
     top: 0;
     display: flex;
 }
-
 .nav_bar{
     position: absolute;
     right: 600px;
     top: 0;
     display: flex;
 }
-
 .nav_bar ul{
     list-style: none;
     padding: 20px;
@@ -66,24 +73,20 @@ body {
     font-family: 'Inika', serif;
     font-size: 13px;
 }
-
 .nav_bar li{
     margin: 0;
     padding: 10px;
     transition: transform 0.1s;
     animation: slide-right-nav 1s ease forwards;
 }
-
 .nav_bar li:hover{
     content: '';
     transform: scale(1.1);
 }
-
 .nav_bar a{
     text-decoration: none;
     color: #FFFFFF;
 }
-
 .nav_bar a:hover{
     color: #DDF44C;
 }
@@ -96,7 +99,6 @@ body {
         transform: translateX(0);
         opacity: 1;
     }
-
 }
 /*************************************************************/
 .home{
@@ -890,7 +892,6 @@ h3{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url("asset/images/WhatsApp Image 2023-11-08 at 13.46.18_79e10c6e.jpg");
     background-size: cover;
 }
 
@@ -1004,73 +1005,143 @@ h3{
 .contact-form .inputBox textarea{
     width: 100%;
     padding: 5px 0;
-    font-size: 16px;
+    font-size: 14px;
     margin: 10px 0;
-    border: none;
-    border-bottom: 2px solid #333;
     outline: none;
+    border: 1px solid rgba(255,255,255,0.25);
     resize: none;
-    background-color: #435055;
+    background-color: #373331;
     border-radius: 10px;
-    text-indent: 20px;
-    color:#2C3333 ;
+    color:#FFFFFF ;
 }
 .contact-form .inputBox span{
     position: absolute;
     left: 0;
     padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
     pointer-events: none;
+    font-size: 14px;
+    margin: 10px 15px;
     transition: 0.5s;
     color:antiquewhite;
-    text-indent: 20px;
+    text-transform: uppercase;
+}
+.contact-form .inputBox input:focus,
+.contact-form .inputBox input:valid,
+.contact-form .inputBox textarea:focus,
+.contact-form .inputBox textarea:valid{
+    border: 1px solid #fff65d;
 }
 .contact-form .inputBox input:focus~span,
 .contact-form .inputBox input:valid~span,
 .contact-form .inputBox textarea:focus~span,
 .contact-form .inputBox textarea:valid~span{
-    color: #FFFFFF;
-    font-size: 14px;
-    transform: translateY(-20px);
+    color: #fff65d;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 12px;
+    padding: 0 5px;
+    background: #373331;
+    border-left: 1px solid #fff65d;
+    border-right: 1px solid #fff65d;
+    letter-spacing: 0.2em;
 }
-.contact-form .inputBox input[type="submit"]{
-    width: 100px;
-    background-color: #fff65d;
-    border-radius: 20px;
-    font-weight: bold;
-    color: black;
-    border: none;
-    cursor: pointer;
-    padding: 8px;
-    font-size: 19px;
-    margin-left: 72%;
+.submit-button {
+    position: relative;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    top: 3px;
+    border: 2px solid #fff65d;
+    background-color: transparent;
+    left: 297px;
+    width: 109px;
+    height: 35px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    transition: all .6s;
+    box-shadow: black 2px 2px 10px;
+    padding-left: 15px;
+    padding-right: 12px;
 }
-
-/*@media (max-width:991px) {*/
-/*    .contact{*/
-/*        padding: 50px;*/
-/*    }*/
-/*    .container{*/
-/*        flex-direction: column;*/
-/*    }*/
-/*    .container .contact-Info{*/
-/*        margin-bottom: 40px;*/
-/*    }*/
-/*    .container .contact-Info{*/
-/*        width: 100%;*/
-/*    }*/
-/*}*/
+.submit-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #fff65d;
+}
 footer{
     text-align: center;
     font-weight: bold;
-    background: #2C3333;
+    background: #212121;
     padding: 10px 0;
-    opacity: 0.5;
+    /*opacity: 0.5;*/
+}
+footer .copyright{
+    background: #493600;
+}
+footer span{
+    color: #FFFFFF;
+    background: #493600;
+}
+#waves{
+    /*border: 3px solid red;*/
+    height: 5vw;
+    position:relative;
+    /*z-index:400000;*/
 }
 
-footer span{
-    color: #fff65d;
+#waves div {
+    left: 0;
+    width: 100%;
+    height: 5vw;
+    background: url("asset/images/wave.png");
+    background-size: 50vw 5vw;
+    z-index: 10;
+}
+#waves div:first-child {
+    z-index: 10;
+    /* opacity: 1; */
+    opacity: 1;
+    position:absolute;
+    top:0;
+    animation: animateWave 5s linear infinite;
+}
+#waves div:nth-child(2) {
+    z-index: 9;
+    opacity: .7;
+    position:absolute;
+    top:0;
+    animation: animateWave2 4s linear infinite;
+}
+#waves div:nth-child(3) {
+    z-index: 10;
+    opacity: .2;
+    position:absolute;
+    top:0;
+    animation: animateWave 3s linear infinite;
+}
+#waves div:last-child {
+    z-index: 9;
+    opacity: .5;
+    position:absolute;
+    top:0;
+    animation: animateWave2 3s linear infinite;
+}
+@keyframes animateWave {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave2 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
 }
 /********************************************************************/
 @media (max-width:1440px) {
